@@ -23,31 +23,36 @@ if not exist "%MC_DIR%" (
 echo.
 echo 2. Verification de Java 21...
 set "NEEDS_JAVA=0"
+
+:: On verifie si Java est installe
 where java >nul 2>&1
-if %ERRORLEVEL% neq 0 (
+if errorlevel 1 (
     set NEEDS_JAVA=1
-) else (
-    :: Verifie si la version de Java commence par "21"
-    java -version 2>&1 | findstr /i "version \"21" >nul
-    if %ERRORLEVEL% neq 0 (
+)
+
+:: Si Java est la, on verifie si c'est bien la version 21
+if "%NEEDS_JAVA%"=="0" (
+    java -version 2>&1 | findstr /R /C:"version .21\." >nul
+    if errorlevel 1 (
         echo [Info] Une ancienne version de Java a ete detectee.
         set NEEDS_JAVA=1
     )
 )
 
+:: Installation de Java si besoin
 if "%NEEDS_JAVA%"=="1" (
     echo [Info] Java 21 est requis mais n'est pas installe ou pas a jour.
-    echo - Telechargement de Java 21 (Eclipse Temurin JRE) en cours...
+    echo - Telechargement de Java 21 en cours...
     curl -L -o "%TEMP%\java21_installer.msi" "https://api.adoptium.net/v3/installer/latest/21/ga/windows/x64/jre/hotspot/normal/eclipse"
     
-    echo - Lancement de l'installation... (Une fenetre d'autorisation peut s'ouvrir)
+    echo - Lancement de l'installation...
     msiexec /i "%TEMP%\java21_installer.msi" /passive /norestart
     
     echo.
     echo ==========================================================
     echo [ACTION REQUISE] Java 21 vient d'etre installe !
     echo Pour que l'ordinateur le detecte, tu dois FERMER cette
-    echo fenetre et DOUBLE-CLIQUER a nouveau sur "setup.bat".
+    echo fenetre et DOUBLE-CLIQUER a nouveau sur setup.bat.
     echo ==========================================================
     pause
     exit /b
