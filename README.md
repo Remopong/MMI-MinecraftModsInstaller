@@ -27,9 +27,13 @@ Une fois le champ vide, copiez-collez ces arguments :
 -Xms10G -Xmx10G sont en rapport avec la RAM de votre ordinateur, remplacez le 10 dans les cas suivants :
 
 Un ordinateur avec 32+ Go de RAM : valeur de 10
+
 Un ordinateur avec 16 Go de RAM : valeur de 6
+
 Un ordinateur avec 8 Go de RAM : valeur de 4
+
 Un ordinateur avec 4 Go de RAM : valeur de 2
+
 
 Si vous avez moins de 4 ou 8 Go de RAM, veuillez supprimer "-XX:G1HeapRegionSize=8M" de la liste des arguments.
 Si votre jeu met beaucoup de temps à se lancer, supprimez -XX:+AlwaysPreTouch de la liste des arguments, si aucune différence n'est constatée ou si cela aggrave le problème, remettez-le.
