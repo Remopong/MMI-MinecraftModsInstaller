@@ -1,3 +1,4 @@
 mods/
 *.jar
 .vscode/
+sync.log

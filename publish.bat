@@ -1,0 +1,5 @@
+@echo off
+title Publication du modpack MMI
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0export.ps1" -Push %*
+echo.
+pause

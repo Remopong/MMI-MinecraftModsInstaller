@@ -26,9 +26,13 @@ le script ne les supprimera pas. Pour changer la RAM : launcher > Configurations
 
 ## Pour l'hote (mise a jour du pack)
 
-1. Modifie ton instance CurseForge comme d'habitude (ajout/maj/suppression de mods, configs, KubeJS).
-2. Lance `export.ps1` (clic droit > Executer avec PowerShell). Il met a jour `modpack.json`, `config/` et `kubejs/`
-   a partir de l'instance (`-Instance "chemin"` si ce n'est pas `MyDATAPACK`).
-3. Commit et push sur la branche **main**.
+Modifie ton instance CurseForge comme d'habitude (ajout/maj/suppression de mods, configs, KubeJS), puis au choix :
 
+- **Automatique** : lance une fois `autosync.ps1` (clic droit > Executer avec PowerShell). Une tache Windows publie
+  alors l'instance sur GitHub a l'ouverture de session et toutes les 30 min, seulement si quelque chose a change
+  et quand le jeu est ferme. Journal : `sync.log`. Desactiver : `autosync.ps1 -Off`.
+- **Manuel** : double-clic sur `publish.bat` (synchronise + commit + push sur `main`).
+- **Verifier avant** : `export.ps1` synchronise sans publier, tu regardes avec `git status`, puis `publish.bat`.
+
+Instance par defaut : `MyDATAPACK` (sinon ajoute `-Instance "chemin"`).
 Les fichiers .jar ne sont pas stockes dans le depot : `modpack.json` contient leurs liens CurseForge.
