@@ -8,7 +8,7 @@
 # Game balancing settings
 [balancing]
 	# Require holding a hoe (either hands) to right-click harvest.
-	"require hoe" = true
+	"require hoe" = false
 	# If [require hoe] is set to true, damage the hoe of the given amount (0 to disable, must be an integer).
 	# Default: 0
 	# Range: > 0

@@ -1,5 +1,5 @@
 {
-  "hide_server_script_errors": true,
+  "hide_server_script_errors": false,
   "server_only": false,
   "announce_reload": true,
   "packmode": "",

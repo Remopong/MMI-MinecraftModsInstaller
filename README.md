@@ -1,39 +1,34 @@
-Préparation :
+# MMI - Installateur du modpack
 
-Si vous n'avez pas de profil existant sur la version 1.21.1, vous pouvez le créer via le Launcher Minecraft dans l'onglet Configuration en haut.
-Sélectionnez ensuite "Nouvelle Configuration", insérez un nom de profil, puis dans VERSION, sélectionnez "release 1.21.1".
-Cliquez ensuite sur Installer en bas à droite.
-Lancez ensuite le jeu en ayant sélectionné la version 1.21.1 dans le menu à gauche du bouton JOUER.
-Une fois dans le menu principal du jeu, fermez-le.
+Installe et met a jour automatiquement les mods, configs et scripts KubeJS du serveur
+(Minecraft 1.21.1 + NeoForge) dans le launcher Minecraft officiel.
 
-Sur GITHUB :
+## Pour les joueurs
 
-Cliquez sur le bouton vert "Code" puis sur "Download ZIP".
+**Avant de commencer :** installe le launcher Minecraft officiel et lance-le une fois (connecte a ton compte), puis **ferme-le**.
 
-Sur votre PC :
+1. Sur GitHub, clique sur le bouton vert **Code** puis **Download ZIP**.
+2. Extrais le ZIP (n'importe ou, par exemple sur le bureau). Ne lance pas le script depuis le ZIP.
+3. Double-clique sur **setup.bat** et laisse faire.
+4. Ouvre le launcher, choisis le profil **MMI - Serveur** et clique sur **JOUER**.
 
-Extrayez absolument le dossier sur votre bureau (ne lancez pas le script directement depuis le ZIP).
-Double-cliquez sur setup.bat.
-Laissez le script faire : s'il installe Java, il vous demandera de fermer et de relancer setup.bat une deuxième fois.
-Ouvrez le launcher Minecraft, vérifiez que le profil NeoForge est sélectionné.
-Entrez dans le menu Configuration en haut, cliquez sur les "..." en face de la version "Neoforge 21.1.229" et cliquez sur Modifier.
-Cliquez ensuite sur "PLUS D'OPTIONS" et effacez TOUS les "ARGUMENTS JVM".
-Une fois le champ vide, copiez-collez ces arguments :
+**Mettre a jour :** quand le serveur change de mods, ferme le launcher et relance simplement `setup.bat`.
+Le script recupere tout seul la derniere version sur GitHub et ne telecharge que ce qui a change.
 
-"-Xms10G -Xmx10G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:MaxTenuringThreshold=1"
+Ce que le script fait pour toi :
+- installe la bonne version de NeoForge (Java est trouve ou telecharge automatiquement, aucun redemarrage) ;
+- telecharge les mods directement depuis CurseForge et verifie qu'ils ne sont pas corrompus ;
+- installe le modpack dans un dossier separe (`%appdata%\.minecraft\modpacks\MMI`) : ton Minecraft normal n'est pas touche ;
+- cree le profil **MMI - Serveur** avec la RAM reglee selon ton PC (10 Go si 32 Go+, 6 Go si 16 Go, 4 Go si 8 Go, 2 Go sinon).
 
-/!\ ATTENTION /!\
+Tu peux ajouter tes propres mods client (minimap, shaders...) dans `%appdata%\.minecraft\modpacks\MMI\mods` :
+le script ne les supprimera pas. Pour changer la RAM : launcher > Configurations > MMI - Serveur > Modifier > Plus d'options.
 
--Xms10G -Xmx10G sont en rapport avec la RAM de votre ordinateur, remplacez le 10 dans les cas suivants :
+## Pour l'hote (mise a jour du pack)
 
-Un ordinateur avec 32+ Go de RAM : valeur de 10
-Un ordinateur avec 16 Go de RAM : valeur de 6
-Un ordinateur avec 8 Go de RAM : valeur de 4
-Un ordinateur avec 4 Go de RAM : valeur de 2
+1. Modifie ton instance CurseForge comme d'habitude (ajout/maj/suppression de mods, configs, KubeJS).
+2. Lance `export.ps1` (clic droit > Executer avec PowerShell). Il met a jour `modpack.json`, `config/` et `kubejs/`
+   a partir de l'instance (`-Instance "chemin"` si ce n'est pas `MyDATAPACK`).
+3. Commit et push sur la branche **main**.
 
-Si vous avez moins de 4 ou 8 Go de RAM, veuillez supprimer "-XX:G1HeapRegionSize=8M" de la liste des arguments.
-Si votre jeu met beaucoup de temps à se lancer, supprimez -XX:+AlwaysPreTouch de la liste des arguments, si aucune différence n'est constatée ou si cela aggrave le problème, remettez-le.
-
-Enregistrez tout et lancez le jeu.
-
-GL HF !
+Les fichiers .jar ne sont pas stockes dans le depot : `modpack.json` contient leurs liens CurseForge.

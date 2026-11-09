@@ -12,7 +12,7 @@ ServerEvents.tags('item', e => {
     e.add('handcrafted:counter_materials', 'minecraft:pale_oak_planks')
     e.add('handcrafted:trim_materials', 'minecraft:pale_oak_planks')
     e.add('holycube:stripped_mushroom', ['minecraft:stripped_mushroom_stem', 'minecraft:stripped_red_mushroom_block', 'minecraft:stripped_brown_mushroom_block'])
-    e.remove('curios:back', ['create:netherite_backtank', 'create:copper_backtank'])
+    //e.remove('curios:back', ['create:netherite_backtank', 'create:copper_backtank'])
 
     /**************************************Holycube Revolution Tags**************************************/
     e.add('holycube:storage_blocks', ['mapperbase:steel_block', 'minecraft:copper_block', 'minecraft:netherite_block', 'minecraft:diamond_block', 'minecraft:redstone_block', 'minecraft:lapis_block', 'minecraft:emerald_block', 'minecraft:gold_block', 'minecraft:iron_block', 'kubejs:polished_rose_quartz_block', 'create:zinc_block', 'create:andesite_alloy_block', 'create:brass_block', 'create_enchantment_industry:super_experience_block', 'create:experience_block', 'minecraft:glowstone'])

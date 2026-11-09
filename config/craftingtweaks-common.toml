@@ -9,6 +9,10 @@
 	rightClickCraftsStack = true
 	#We both know JEI is much better. This option hides Vanilla's crafting book button instead of moving it.
 	hideVanillaCraftingGuide = false
+	#Offset from the right when repositioning the vanilla recipe book button.
+	vanillaCraftingGuideOffsetX = -25
+	#Offset from the top when repositioning the vanilla recipe book button.
+	vanillaCraftingGuideOffsetY = 5
 	#Set to 'DEFAULT' to enable both buttons and hotkeys. Set to 'BUTTONS' to enable buttons only. Set to 'HOTKEYS' to enable hotkeys only. Set to 'DISABLED' to disable completely.
 	#Allowed Values: DEFAULT, BUTTONS, HOTKEYS, DISABLED
 	mode = "DEFAULT"

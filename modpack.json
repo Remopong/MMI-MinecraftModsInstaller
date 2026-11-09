@@ -1,0 +1,1603 @@
+{
+    "minecraft":  "1.21.1",
+    "neoforge":  "21.1.262",
+    "generated":  "2026-11-09 23:14",
+    "mods":  [
+                 {
+                     "name":  "Security Craft",
+                     "file":  "[1.21.1] SecurityCraft v1.10.2.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8336/498/%5b1.21.1%5d%20SecurityCraft%20v1.10.2.1.jar",
+                     "size":  5193371,
+                     "sha1":  "8760079e80039f982f1a92d3ee9d60a2bcab3251"
+                 },
+                 {
+                     "name":  "Accessories",
+                     "file":  "accessories-neoforge-1.1.0-beta.54+1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/9216/447/accessories-neoforge-1.1.0-beta.54%2b1.21.1.jar",
+                     "size":  1086553,
+                     "sha1":  "0d0b07fa319a9f93c82873f9851ad35e100031f6"
+                 },
+                 {
+                     "name":  "Ad Astra",
+                     "file":  "adastra-1.21.1-1.16.26-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/8874/894/adastra-1.21.1-1.16.26-neoforge.jar",
+                     "size":  7301791,
+                     "sha1":  "b6c4560cc625a6847e016af576954ff1f0431d99"
+                 },
+                 {
+                     "name":  "Additional Lights",
+                     "file":  "additional_lights-neoforge-1.21-2.1.10.jar",
+                     "url":  "https://edge.forgecdn.net/files/6841/545/additional_lights-neoforge-1.21-2.1.10.jar",
+                     "size":  514194,
+                     "sha1":  "8dc485146437e8ac40dd29e10747601fd4e372ca"
+                 },
+                 {
+                     "name":  "Additional Lanterns",
+                     "file":  "additionallanterns-1.1.2-neoforge-mc1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/6770/129/additionallanterns-1.1.2-neoforge-mc1.21.jar",
+                     "size":  3041170,
+                     "sha1":  "0969eabc4cb24e72d1803ec9a361b177df81a9c6"
+                 },
+                 {
+                     "name":  "AE2 JEI Integration",
+                     "file":  "ae2jeiintegration-1.2.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/7727/898/ae2jeiintegration-1.2.1.jar",
+                     "size":  91710,
+                     "sha1":  "e99898b3e9c32bf6ac757e7ad50247746622cdfc"
+                 },
+                 {
+                     "name":  "Create: Aeroworks",
+                     "file":  "aeroworks-1.5.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/8743/51/aeroworks-1.5.0.jar",
+                     "size":  790152,
+                     "sha1":  "a14ff1c30f3c824b36ee6e2e711a47fd537a5c5f"
+                 },
+                 {
+                     "name":  "AllTheLeaks (Memory Leak Fix)",
+                     "file":  "alltheleaks-1.1.13+1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/8943/912/alltheleaks-1.1.13%2b1.21.1-neoforge.jar",
+                     "size":  565062,
+                     "sha1":  "ea11d23e0f8c48544a269dc7c56f6593cb1cafe2"
+                 },
+                 {
+                     "name":  "Amendments",
+                     "file":  "amendments-1.21-2.1.11-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/9122/440/amendments-1.21-2.1.11-neoforge.jar",
+                     "size":  1175215,
+                     "sha1":  "3d1ba6f88621e4f7f4264d262eb20a2d98bf1f59"
+                 },
+                 {
+                     "name":  "Another Furniture",
+                     "file":  "another_furniture-neoforge-4.0.3.jar",
+                     "url":  "https://edge.forgecdn.net/files/8955/672/another_furniture-neoforge-4.0.3.jar",
+                     "size":  2422436,
+                     "sha1":  "36e2b147d86c31262bf8f7c571aeea683d71173d"
+                 },
+                 {
+                     "name":  "Anvian\u0027s Lib",
+                     "file":  "anvianslib-neoforge-1.21-1.4.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/7342/615/anvianslib-neoforge-1.21-1.4.2.jar",
+                     "size":  29731,
+                     "sha1":  "b955b065375dd6486138aed28c8442b7495f1c4f"
+                 },
+                 {
+                     "name":  "AppleSkin",
+                     "file":  "appleskin-neoforge-mc1.21-3.0.9.jar",
+                     "url":  "https://edge.forgecdn.net/files/7854/442/appleskin-neoforge-mc1.21-3.0.9.jar",
+                     "size":  75804,
+                     "sha1":  "81cf0e668f991f83ac8820c386fbd6c9c3602246"
+                 },
+                 {
+                     "name":  "Applied Energistics 2",
+                     "file":  "appliedenergistics2-19.2.18.jar",
+                     "url":  "https://edge.forgecdn.net/files/8992/605/appliedenergistics2-19.2.18.jar",
+                     "size":  8236552,
+                     "sha1":  "bcd04bc7f181b2ffa314625f284c8eca6fee7fe4"
+                 },
+                 {
+                     "name":  "Architectury API",
+                     "file":  "architectury-13.0.11-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/8492/726/architectury-13.0.11-neoforge.jar",
+                     "size":  584734,
+                     "sha1":  "008656a0702801174b8ec245ed7aad1921d6e9f1"
+                 },
+                 {
+                     "name":  "Armor Poser",
+                     "file":  "ArmorPoser-neoforge-1.21.1-6.2.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/8542/862/ArmorPoser-neoforge-1.21.1-6.2.4.jar",
+                     "size":  126563,
+                     "sha1":  "49efeed66e7dcbf00813f495b670c54561a02f1f"
+                 },
+                 {
+                     "name":  "Athena",
+                     "file":  "athena-neoforge-1.21.1-4.0.6.jar",
+                     "url":  "https://edge.forgecdn.net/files/8061/947/athena-neoforge-1.21.1-4.0.6.jar",
+                     "size":  99944,
+                     "sha1":  "4bcbdf388bd5e387beca7c627224aac33584b55b"
+                 },
+                 {
+                     "name":  "AttributeFix",
+                     "file":  "attributefix-neoforge-1.21.1-21.1.3.jar",
+                     "url":  "https://edge.forgecdn.net/files/7115/922/attributefix-neoforge-1.21.1-21.1.3.jar",
+                     "size":  19809,
+                     "sha1":  "7aae849f6d2a6cb1368227407ea5deb552e100ba"
+                 },
+                 {
+                     "name":  "bad packets",
+                     "file":  "badpackets-neo-0.8.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/6067/146/badpackets-neo-0.8.2.jar",
+                     "size":  54641,
+                     "sha1":  "6a29963a30afd7fa8993b97e4f870460b3f51323"
+                 },
+                 {
+                     "name":  "BaguetteLib",
+                     "file":  "baguettelib-1.21.1-NeoForge-2.0.7.jar",
+                     "url":  "https://edge.forgecdn.net/files/8887/463/baguettelib-1.21.1-NeoForge-2.0.7.jar",
+                     "size":  85738,
+                     "sha1":  "3f4d8f7548a71a93ac60feefad0722d92a42d4bd"
+                 },
+                 {
+                     "name":  "Balm",
+                     "file":  "balm-neoforge-1.21.1-21.0.66.jar",
+                     "url":  "https://edge.forgecdn.net/files/8969/738/balm-neoforge-1.21.1-21.0.66.jar",
+                     "size":  783793,
+                     "sha1":  "dd3606a349f4a3c8fb5bd0ab22905675c02b0d74"
+                 },
+                 {
+                     "name":  "Beautify!",
+                     "file":  "beautify-neoforge-1.21.1-2.0.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/5947/973/beautify-neoforge-1.21.1-2.0.2.jar",
+                     "size":  932199,
+                     "sha1":  "936dc981f243c4606376ba7d6f03798e0b5a6871"
+                 },
+                 {
+                     "name":  "Create: Bells \u0026 Whistles",
+                     "file":  "bellsandwhistles-0.4.7-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6299/879/bellsandwhistles-0.4.7-1.21.1.jar",
+                     "size":  193619,
+                     "sha1":  "85944080f8bd47dad64a8193a70662cd9ddbb200"
+                 },
+                 {
+                     "name":  "Better Advanced Tooltips",
+                     "file":  "better-advanced-tooltips-2101.1.0-build.5.jar",
+                     "url":  "https://edge.forgecdn.net/files/8576/77/better-advanced-tooltips-2101.1.0-build.5.jar",
+                     "size":  37653,
+                     "sha1":  "5b73537b908764f2d3fd593a0f56a8b1b034bc50"
+                 },
+                 {
+                     "name":  "Better Advancements",
+                     "file":  "BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/5850/587/BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+                     "size":  98641,
+                     "sha1":  "870521cfaa1a4cb6c830e2409e8b9e4cf179aff2"
+                 },
+                 {
+                     "name":  "Better Compatibility Checker",
+                     "file":  "better-compatability-checker-neoforge-21.1.8.jar",
+                     "url":  "https://edge.forgecdn.net/files/7404/415/better-compatability-checker-neoforge-21.1.8.jar",
+                     "size":  25085,
+                     "sha1":  "186ba3fbacacb0ce93b9c5a5ddca28799c1577cb"
+                 },
+                 {
+                     "name":  "Bookshelf",
+                     "file":  "bookshelf-neoforge-1.21.1-21.1.81.jar",
+                     "url":  "https://edge.forgecdn.net/files/7606/240/bookshelf-neoforge-1.21.1-21.1.81.jar",
+                     "size":  328813,
+                     "sha1":  "efc4cda6da4dd879f24d057ed0a6413764c9ba40"
+                 },
+                 {
+                     "name":  "Bountiful Blocks",
+                     "file":  "bountifulblocks-0.9.9.jar",
+                     "url":  "https://edge.forgecdn.net/files/6449/560/bountifulblocks-0.9.9.jar",
+                     "size":  3412439,
+                     "sha1":  "94254143cb5446b8388105409a1205b2673164d2"
+                 },
+                 {
+                     "name":  "Bountiful Braces",
+                     "file":  "bountifulbraces-0.8.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6513/304/bountifulbraces-0.8.1.jar",
+                     "size":  484553,
+                     "sha1":  "6ddbc0dad2e77a4f294ac20ea48a7b0986f48628"
+                 },
+                 {
+                     "name":  "Build Guide",
+                     "file":  "BuildGuide-1.21-0.4.9.jar",
+                     "url":  "https://edge.forgecdn.net/files/8457/851/BuildGuide-1.21-0.4.9.jar",
+                     "size":  1679083,
+                     "sha1":  "51e696880ac6c95a1c279875a9a00f3f7dcdb4d0"
+                 },
+                 {
+                     "name":  "[CTL] Calm The Leaks",
+                     "file":  "calmtheleaks-1.2.5+1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/8886/507/calmtheleaks-1.2.5%2b1.21.1-neoforge.jar",
+                     "size":  176013,
+                     "sha1":  "3875663b1296f3d1bf602fd51b1c0a87e1c095f0"
+                 },
+                 {
+                     "name":  "Camera Mod",
+                     "file":  "camera-neoforge-1.21.1-1.0.22.jar",
+                     "url":  "https://edge.forgecdn.net/files/8657/78/camera-neoforge-1.21.1-1.0.22.jar",
+                     "size":  307439,
+                     "sha1":  "79c6969bfad4e3b903ba247ebb1f64882ef09aa3"
+                 },
+                 {
+                     "name":  "CC: Tweaked (Unofficial)",
+                     "file":  "cc-tweaked-1.21.1-forge-1.117.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8005/487/cc-tweaked-1.21.1-forge-1.117.1.jar",
+                     "size":  3120277,
+                     "sha1":  "aaf6233b23e1ff01ed286824ba359aaa5eed0918"
+                 },
+                 {
+                     "name":  "CERBON\u0027s API [Forge | Fabric | NeoForge]",
+                     "file":  "CerbonsAPI-NeoForge-1.21-1.3.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/6483/943/CerbonsAPI-NeoForge-1.21-1.3.0.jar",
+                     "size":  250545,
+                     "sha1":  "3f0d3eed4633d9ef3a713de4b39ee4e683aa9389"
+                 },
+                 {
+                     "name":  "Charm of Undying (Fabric/Forge/Quilt)",
+                     "file":  "charmofundying-neoforge-9.1.0+1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/5846/603/charmofundying-neoforge-9.1.0%2b1.21.1.jar",
+                     "size":  178369,
+                     "sha1":  "891d5b49920401fd960b2d8819f490496a0986dc"
+                 },
+                 {
+                     "name":  "Chat Heads",
+                     "file":  "chat_heads-0.15.7-neoforge-1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/8642/154/chat_heads-0.15.7-neoforge-1.21.jar",
+                     "size":  91948,
+                     "sha1":  "536b2af675229d2a33eb4cf5afbe7148a62d5f3f"
+                 },
+                 {
+                     "name":  "Chipped",
+                     "file":  "chipped-neoforge-1.21.1-4.0.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/5813/117/chipped-neoforge-1.21.1-4.0.2.jar",
+                     "size":  15020578,
+                     "sha1":  "6f5395f58139802edfde7cb9170279f92f291971"
+                 },
+                 {
+                     "name":  "Cloth Config API (Fabric/Forge/NeoForge)",
+                     "file":  "cloth-config-15.0.140-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/5729/127/cloth-config-15.0.140-neoforge.jar",
+                     "size":  1163890,
+                     "sha1":  "c3e5733ba4503b102589a026000fd5ce0212f6f2"
+                 },
+                 {
+                     "name":  "Clumps",
+                     "file":  "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/5623/731/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+                     "size":  18382,
+                     "sha1":  "fa2576297c7bd12b28aa7070e8141792bd66da4c"
+                 },
+                 {
+                     "name":  "Cobweb",
+                     "file":  "cobweb-neoforge-1.21-1.4.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/7186/943/cobweb-neoforge-1.21-1.4.0.jar",
+                     "size":  410948,
+                     "sha1":  "5ae5dbf4184a62b9ff5bd31f6f8ba62943dd197d"
+                 },
+                 {
+                     "name":  "Comforts",
+                     "file":  "comforts-neoforge-9.0.5+1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/7515/858/comforts-neoforge-9.0.5%2b1.21.1.jar",
+                     "size":  422658,
+                     "sha1":  "21d6bee3821d62fe3356c51fb1d697871a3087ff"
+                 },
+                 {
+                     "name":  "Common Storage Lib",
+                     "file":  "common-storage-lib-neoforge-1.21.1-0.0.10.jar",
+                     "url":  "https://edge.forgecdn.net/files/8421/542/common-storage-lib-neoforge-1.21.1-0.0.10.jar",
+                     "size":  309860,
+                     "sha1":  "e0ba85038480d50a3816d5920014bfcccdbe7329"
+                 },
+                 {
+                     "name":  "Configured",
+                     "file":  "configured-neoforge-1.21.1-2.6.3.jar",
+                     "url":  "https://edge.forgecdn.net/files/7276/577/configured-neoforge-1.21.1-2.6.3.jar",
+                     "size":  428793,
+                     "sha1":  "e977d86eec39d49295df4e2c4265d6710ae065e8"
+                 },
+                 {
+                     "name":  "Controlling",
+                     "file":  "Controlling-neoforge-1.21.1-19.0.5.jar",
+                     "url":  "https://edge.forgecdn.net/files/6368/976/Controlling-neoforge-1.21.1-19.0.5.jar",
+                     "size":  77555,
+                     "sha1":  "8a34424fc1428778be2fdbfa4da67b21b70bcbfe"
+                 },
+                 {
+                     "name":  "Create: Copycats+",
+                     "file":  "copycats-3.0.9+mc.1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/8822/348/copycats-3.0.9%2bmc.1.21.1-neoforge.jar",
+                     "size":  1799381,
+                     "sha1":  "74de17876c43f5f780bac478b9f9eb11e687b8d7"
+                 },
+                 {
+                     "name":  "Corpse x Curios API Compat",
+                     "file":  "corpsecurioscompat-1.21.1-NeoForge-3.1.3.jar",
+                     "url":  "https://edge.forgecdn.net/files/7088/158/corpsecurioscompat-1.21.1-NeoForge-3.1.3.jar",
+                     "size":  24683,
+                     "sha1":  "2aa5e83940a26c6e529e58a3a8a0260df3078c6d"
+                 },
+                 {
+                     "name":  "Corpse",
+                     "file":  "corpse-neoforge-1.21.1-1.1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/9188/333/corpse-neoforge-1.21.1-1.1.21.jar",
+                     "size":  256713,
+                     "sha1":  "124791f94c501c2c12a132f4cc69a3a738498b9d"
+                 },
+                 {
+                     "name":  "Crafting Tweaks",
+                     "file":  "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+                     "url":  "https://edge.forgecdn.net/files/8697/50/craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+                     "size":  256086,
+                     "sha1":  "b6252039445978a742f439fc398f2a198b86bd4e"
+                 },
+                 {
+                     "name":  "Create Encased",
+                     "file":  "Create Encased-1.21.1-1.9.0-ht3.jar",
+                     "url":  "https://edge.forgecdn.net/files/8549/840/Create%20Encased-1.21.1-1.9.0-ht3.jar",
+                     "size":  3110804,
+                     "sha1":  "bc749c8ec3ad4fef7d5a052c904008971158f274"
+                 },
+                 {
+                     "name":  "Create More Recipes",
+                     "file":  "Create More Recipes-1.21.1-1.2.1-fix1.jar",
+                     "url":  "https://edge.forgecdn.net/files/7159/789/Create%20More%20Recipes-1.21.1-1.2.1-fix1.jar",
+                     "size":  737407,
+                     "sha1":  "9cdb73e11d1a201d5849a26939bad917081cd25d"
+                 },
+                 {
+                     "name":  "Create: Quality Of Life",
+                     "file":  "Create Quality of Life-1.21.1-1.6.3-fix1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8265/828/Create%20Quality%20of%20Life-1.21.1-1.6.3-fix1.jar",
+                     "size":  1801722,
+                     "sha1":  "bc5aa6699c5dfb2e1de40c2627c11b1751caa9db"
+                 },
+                 {
+                     "name":  "Create Aeronautics: Automated Logistics",
+                     "file":  "create_aeronautics_automated_logistics-0.7.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/9184/782/create_aeronautics_automated_logistics-0.7.0.jar",
+                     "size":  1766088,
+                     "sha1":  "0da40850bdb4f3eb18340e6adb466d2af5fba50f"
+                 },
+                 {
+                     "name":  "Create Aeronautics: FTB Chunks",
+                     "file":  "create_aeronautics_ftb_chunks-1.21.1-NeoForge-1.2.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/8888/976/create_aeronautics_ftb_chunks-1.21.1-NeoForge-1.2.0.jar",
+                     "size":  155318,
+                     "sha1":  "d505c3675adb535a23b2abc794e034bc809098d4"
+                 },
+                 {
+                     "name":  "create aeronautics：toolgun",
+                     "file":  "create_aeronautics_toolgun-0.3.6.jar",
+                     "url":  "https://edge.forgecdn.net/files/8701/394/create_aeronautics_toolgun-0.3.6.jar",
+                     "size":  1353291,
+                     "sha1":  "81103160768a52a5bc7fffb5fadc1c441883d5d5"
+                 },
+                 {
+                     "name":  "Create: Aquatic Ambitions",
+                     "file":  "create_aquatic_ambitions-1.21.1-2.0.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/8466/444/create_aquatic_ambitions-1.21.1-2.0.4.jar",
+                     "size":  1074131,
+                     "sha1":  "a02ce8ffc8395566c4fbe7907e721e82fd1b590b"
+                 },
+                 {
+                     "name":  "Create: Curios Backtank",
+                     "file":  "create_curios_backtank-neoforge-1.21.1-1.0.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/9207/977/create_curios_backtank-neoforge-1.21.1-1.0.2.jar",
+                     "size":  596682,
+                     "sha1":  "39535a4135422733ded077d46696492d252d8403"
+                 },
+                 {
+                     "name":  "Create: Extra Casing",
+                     "file":  "create_extra_casing-4.0.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/6944/498/create_extra_casing-4.0.4.jar",
+                     "size":  1484026,
+                     "sha1":  "8560d1568f4febdaacce55df72949e949c888f22"
+                 },
+                 {
+                     "name":  "Create: Flight Control",
+                     "file":  "create_flight_control-neoforge-0.8.3.jar",
+                     "url":  "https://edge.forgecdn.net/files/9313/228/create_flight_control-neoforge-0.8.3.jar",
+                     "size":  5700878,
+                     "sha1":  "6efa89db07e45fe8687e8d1abe8ca284d3fb1630"
+                 },
+                 {
+                     "name":  "Create: Hypertubes",
+                     "file":  "create_hypertube-0.6.0-NEOFORGE.jar",
+                     "url":  "https://edge.forgecdn.net/files/8541/877/create_hypertube-0.6.0-NEOFORGE.jar",
+                     "size":  546142,
+                     "sha1":  "8004b4b3959364609906ea4d7bf409add879a222"
+                 },
+                 {
+                     "name":  "Create: Curios Jetpack \u0026 Backtank",
+                     "file":  "create_jetpack_curios-1.2.0-neoforge-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6328/368/create_jetpack_curios-1.2.0-neoforge-1.21.1.jar",
+                     "size":  421892,
+                     "sha1":  "5146fc22a9385de8103b5ca0151f80dcd0f03978"
+                 },
+                 {
+                     "name":  "Create Mechanical Chicken",
+                     "file":  "create_mechanical_chicken-1.21.1-1.4.2-6.0.10.jar",
+                     "url":  "https://edge.forgecdn.net/files/8418/614/create_mechanical_chicken-1.21.1-1.4.2-6.0.10.jar",
+                     "size":  207396,
+                     "sha1":  "4d85f05f0a4a56cf589fa5ae9113b3eb7b9cd9bc"
+                 },
+                 {
+                     "name":  "Create Mechanical Extruder",
+                     "file":  "create_mechanical_extruder-1.21.1-2.2.2-6.0.10.jar",
+                     "url":  "https://edge.forgecdn.net/files/8418/567/create_mechanical_extruder-1.21.1-2.2.2-6.0.10.jar",
+                     "size":  523501,
+                     "sha1":  "9de27d604a71a3aeb4f197e725b31fe6af3202f2"
+                 },
+                 {
+                     "name":  "Create Aeronautics: Mekanism Compatibility",
+                     "file":  "create_mekanism_compat-0.1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/8299/825/create_mekanism_compat-0.1.21.jar",
+                     "size":  139829,
+                     "sha1":  "048742b32d94daeba286e85d57ce6aa961f36280"
+                 },
+                 {
+                     "name":  "Create: Pattern Schematics",
+                     "file":  "create_pattern_schematics-2.0.10.jar",
+                     "url":  "https://edge.forgecdn.net/files/7155/413/create_pattern_schematics-2.0.10.jar",
+                     "size":  221764,
+                     "sha1":  "e3dea574c3b3d590444796a42e8f7456280b1063"
+                 },
+                 {
+                     "name":  "Create: Recycling Everything [NeoForge Port]",
+                     "file":  "create_recycle_everything-1.0.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6383/172/create_recycle_everything-1.0.1.jar",
+                     "size":  337340,
+                     "sha1":  "405b43418fded03ef391a9dc9ee3e12a11145e0d"
+                 },
+                 {
+                     "name":  "Create : Misc \u0026 Things",
+                     "file":  "create_things_and_misc-4.1.1-neoforge-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8169/164/create_things_and_misc-4.1.1-neoforge-1.21.1.jar",
+                     "size":  1055815,
+                     "sha1":  "d483dc9564ec37db97dfca306e439c998a7366bb"
+                 },
+                 {
+                     "name":  "Create: Vibrant Vaults",
+                     "file":  "create_vibrant_vaults-0.3.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/6463/890/create_vibrant_vaults-0.3.2.jar",
+                     "size":  2687938,
+                     "sha1":  "d0dbdde6318c4dd4ede1d2c091f1a64896ba872a"
+                 },
+                 {
+                     "name":  "Create: Winery",
+                     "file":  "create_winery-2.0.2-neoforge-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/7831/305/create_winery-2.0.2-neoforge-1.21.1.jar",
+                     "size":  513007,
+                     "sha1":  "f6c40e927550c68c3091376d7279aa97c23cd2c2"
+                 },
+                 {
+                     "name":  "Create",
+                     "file":  "create-1.21.1-6.0.10.jar",
+                     "url":  "https://edge.forgecdn.net/files/7963/363/create-1.21.1-6.0.10.jar",
+                     "size":  19123767,
+                     "sha1":  "0e97e49837bed766e6f28a4c95b04885d6acc353"
+                 },
+                 {
+                     "name":  "Create Crafts \u0026 Additions",
+                     "file":  "createaddition-1.6.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/8188/476/createaddition-1.6.0.jar",
+                     "size":  1661802,
+                     "sha1":  "87b539d41ed238e98b26c607c0c81a973323147e"
+                 },
+                 {
+                     "name":  "Create Aeronautics",
+                     "file":  "create-aeronautics-bundled-1.21.1-1.3.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/8763/471/create-aeronautics-bundled-1.21.1-1.3.2.jar",
+                     "size":  33123131,
+                     "sha1":  "ddbe9cbc25e8f663218aa1e9fdfc4b99f0e11e4b"
+                 },
+                 {
+                     "name":  "Create Aeronautics x Curios API Compat",
+                     "file":  "createaeronauticscurios-neoforge-1.21.1-2.3.jar",
+                     "url":  "https://edge.forgecdn.net/files/9076/258/createaeronauticscurios-neoforge-1.21.1-2.3.jar",
+                     "size":  45263,
+                     "sha1":  "cb04ac36f4b542a072c860297dfe8b273228a41c"
+                 },
+                 {
+                     "name":  "Create Big Cannons",
+                     "file":  "createbigcannons-5.11.7+mc.1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8303/106/createbigcannons-5.11.7%2bmc.1.21.1.jar",
+                     "size":  3771506,
+                     "sha1":  "c90ee0b2142e2c58d233e150cb3a24c7cb07eb2d"
+                 },
+                 {
+                     "name":  "Create: Configurable Machine Outputs - Now for Millstones , Presses and Crushing Wheels !",
+                     "file":  "createcmo-1.3.0-create-6.0.x-neoforge-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8188/631/createcmo-1.3.0-create-6.0.x-neoforge-1.21.1.jar",
+                     "size":  77833,
+                     "sha1":  "ba855fa2dc3c01dcbf7dcac5adde81f00fd44dd0"
+                 },
+                 {
+                     "name":  "Create: Dragons Plus",
+                     "file":  "CreateDragonsPlus-1.11.9.jar",
+                     "url":  "https://edge.forgecdn.net/files/8900/55/CreateDragonsPlus-1.11.9.jar",
+                     "size":  1085674,
+                     "sha1":  "67ffcb61207a7dbc6b1e70f0473ddbacb19d44eb"
+                 },
+                 {
+                     "name":  "Create: Enchantable Machinery",
+                     "file":  "createenchantablemachinery-3.6.0+mc1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/7766/920/createenchantablemachinery-3.6.0%2bmc1.21.1-neoforge.jar",
+                     "size":  575739,
+                     "sha1":  "ed9a5cf654235f54a3c5aced27ac654d5258e393"
+                 },
+                 {
+                     "name":  "Create: Enchantment Industry",
+                     "file":  "create-enchantment-industry-2.4.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/8241/347/create-enchantment-industry-2.4.2.jar",
+                     "size":  1283517,
+                     "sha1":  "4ad5c181c805a548e15892500b07c0c0f88f0734"
+                 },
+                 {
+                     "name":  "Create: Framed",
+                     "file":  "createframed-1.21.1-1.8.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/8394/637/createframed-1.21.1-1.8.2.jar",
+                     "size":  2871366,
+                     "sha1":  "222c998ffc62cd734e1318134c7f182c68f2b527"
+                 },
+                 {
+                     "name":  "Create: New Age",
+                     "file":  "create-new-age-1.2.0+neoforge-mc1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8215/216/create-new-age-1.2.0%2bneoforge-mc1.21.1.jar",
+                     "size":  1644485,
+                     "sha1":  "849df57070ffa75c2446b9c460d03f6b49fa089e"
+                 },
+                 {
+                     "name":  "Create Propulsion: Simulated",
+                     "file":  "createpropulsion-1.1.5.jar",
+                     "url":  "https://edge.forgecdn.net/files/8496/246/createpropulsion-1.1.5.jar",
+                     "size":  1707765,
+                     "sha1":  "928e9428ee92d07426c296b04a7fffb1e737e290"
+                 },
+                 {
+                     "name":  "Create: More Sand Papers",
+                     "file":  "createsandpapers-1.3.1-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/7952/723/createsandpapers-1.3.1-1.21.1.jar",
+                     "size":  93605,
+                     "sha1":  "d73846cfd23f584adb8e2811422f070f4ec39571"
+                 },
+                 {
+                     "name":  "Create Stuff \u0027N Additions",
+                     "file":  "create-stuff-additions1.21.1_v2.1.4b.jar",
+                     "url":  "https://edge.forgecdn.net/files/8664/66/create-stuff-additions1.21.1_v2.1.4b.jar",
+                     "size":  1347181,
+                     "sha1":  "246915560f74b92e0186c22da26be8995380c443"
+                 },
+                 {
+                     "name":  "Create: Transmission!",
+                     "file":  "createtransmission-1.2.2+neoforge-create6-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8646/664/createtransmission-1.2.2%2bneoforge-create6-1.21.1.jar",
+                     "size":  250901,
+                     "sha1":  "60e020b39a243e4eca5d15e3c9299fcdf8ed20d2"
+                 },
+                 {
+                     "name":  "CreativeCore",
+                     "file":  "CreativeCore_NEOFORGE_v2.13.51_mc1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/9108/41/CreativeCore_NEOFORGE_v2.13.51_mc1.21.1.jar",
+                     "size":  1236490,
+                     "sha1":  "eb2242b3d4442ad4017ba0624a7f9588e778b157"
+                 },
+                 {
+                     "name":  "Critters and Companions",
+                     "file":  "crittersandcompanions-neoforge-1.21.1-2.7.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/8646/976/crittersandcompanions-neoforge-1.21.1-2.7.0.jar",
+                     "size":  2098079,
+                     "sha1":  "957286bd79fd0b735c2e9619a249dde77292ca06"
+                 },
+                 {
+                     "name":  "Cupboard",
+                     "file":  "cupboard-1.21.1-4.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/8889/50/cupboard-1.21.1-4.2.jar",
+                     "size":  30517,
+                     "sha1":  "6c2d786a161f49470dad92b2edaefdac38a1e79b"
+                 },
+                 {
+                     "name":  "Curios API",
+                     "file":  "curios-neoforge-9.5.1+1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6529/130/curios-neoforge-9.5.1%2b1.21.1.jar",
+                     "size":  410690,
+                     "sha1":  "418fcd42e3a7844c9bdc71c9b6401fdb3894e0c4"
+                 },
+                 {
+                     "name":  "Dawn Of Time",
+                     "file":  "dawnoftimebuilder-neoforge-1.21.1-1.6.7.jar",
+                     "url":  "https://edge.forgecdn.net/files/9031/116/dawnoftimebuilder-neoforge-1.21.1-1.6.7.jar",
+                     "size":  3118020,
+                     "sha1":  "a0441bb4239d410d92b9a9733cbd0cdf943dd66c"
+                 },
+                 {
+                     "name":  "Diagonal Fences",
+                     "file":  "DiagonalFences-v21.1.1-1.21.1-NeoForge.jar",
+                     "url":  "https://edge.forgecdn.net/files/5918/197/DiagonalFences-v21.1.1-1.21.1-NeoForge.jar",
+                     "size":  171557,
+                     "sha1":  "d77da342ec4fcdea694911cba068e310a0230621"
+                 },
+                 {
+                     "name":  "Diagonal Walls",
+                     "file":  "DiagonalWalls-v21.1.2-1.21.1-NeoForge.jar",
+                     "url":  "https://edge.forgecdn.net/files/5918/894/DiagonalWalls-v21.1.2-1.21.1-NeoForge.jar",
+                     "size":  167853,
+                     "sha1":  "f2aed3ac68f5cc5e41ccc9d493f2706b0df53296"
+                 },
+                 {
+                     "name":  "Diagonal Windows",
+                     "file":  "DiagonalWindows-v21.1.1-1.21.1-NeoForge.jar",
+                     "url":  "https://edge.forgecdn.net/files/5918/192/DiagonalWindows-v21.1.1-1.21.1-NeoForge.jar",
+                     "size":  172170,
+                     "sha1":  "a2d28a50756a297d77f0a0fb9a015f4c2c501700"
+                 },
+                 {
+                     "name":  "Display Delight",
+                     "file":  "displaydelight-1.7.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/8242/893/displaydelight-1.7.0.jar",
+                     "size":  1144367,
+                     "sha1":  "0d2040a348a1d42907561babff9ac983c466b825"
+                 },
+                 {
+                     "name":  "Distant Horizons: A Level of Detail mod",
+                     "file":  "DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/9004/764/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
+                     "size":  28289212,
+                     "sha1":  "4357b4d19fab818780c94f0e43dad1cc931634b2"
+                 },
+                 {
+                     "name":  "Create: Dreams n\u0027 Desires",
+                     "file":  "DnDesires-1.21.1-2.3a-BETA.jar",
+                     "url":  "https://edge.forgecdn.net/files/8037/481/DnDesires-1.21.1-2.3a-BETA.jar",
+                     "size":  1249099,
+                     "sha1":  "72635119b4bcc49b050c50d6cbb1abb02bb3982a"
+                 },
+                 {
+                     "name":  "Do a Barrel Roll",
+                     "file":  "do_a_barrel_roll-neoforge-3.7.3+1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/6189/476/do_a_barrel_roll-neoforge-3.7.3%2b1.21.jar",
+                     "size":  465787,
+                     "sha1":  "6a3cc7dc17fb701087a9705b06d75d9bb5f09065"
+                 },
+                 {
+                     "name":  "Dusty Decorations",
+                     "file":  "dustydecorations-neoforge+1.21.1-2.3.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/9206/277/dustydecorations-neoforge%2b1.21.1-2.3.1.jar",
+                     "size":  3078479,
+                     "sha1":  "19462ed062607ee0405eae7a4b1f2b6e3d352d59"
+                 },
+                 {
+                     "name":  "Easy Piglins",
+                     "file":  "easy-piglins-neoforge-1.21.1-1.0.14.jar",
+                     "url":  "https://edge.forgecdn.net/files/6137/967/easy-piglins-neoforge-1.21.1-1.0.14.jar",
+                     "size":  226157,
+                     "sha1":  "7402adc6eef5f42dba1960247ef07f1bdf6666e4"
+                 },
+                 {
+                     "name":  "Easy Villagers",
+                     "file":  "easy-villagers-neoforge-1.21.1-1.1.47.jar",
+                     "url":  "https://edge.forgecdn.net/files/9126/416/easy-villagers-neoforge-1.21.1-1.1.47.jar",
+                     "size":  456642,
+                     "sha1":  "e0b6cab2efe4123ef6fa0be2cc4133a69411cb83"
+                 },
+                 {
+                     "name":  "OpenBlocks Elevator",
+                     "file":  "elevatorid-neoforge-1.21.1-1.11.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/6199/696/elevatorid-neoforge-1.21.1-1.11.4.jar",
+                     "size":  191190,
+                     "sha1":  "87a5504efcd51de55cd4215a103cbfcf717fa022"
+                 },
+                 {
+                     "name":  "EmbellishCraft",
+                     "file":  "embellishcraft-1.21.1-8.0.0.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/6619/982/embellishcraft-1.21.1-8.0.0.4.jar",
+                     "size":  4617532,
+                     "sha1":  "ec8847ebcb85dab2aaab2d5af47a78c6ef683344"
+                 },
+                 {
+                     "name":  "Enchantment Descriptions",
+                     "file":  "enchdesc-neoforge-1.21.1-21.1.11.jar",
+                     "url":  "https://edge.forgecdn.net/files/8693/34/enchdesc-neoforge-1.21.1-21.1.11.jar",
+                     "size":  82648,
+                     "sha1":  "4d453df785ac21e0e7389cba949f4fa460c3e267"
+                 },
+                 {
+                     "name":  "EnderPack - New Backpack",
+                     "file":  "ender_pack-merged-1.21.1-2.2.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/6404/199/ender_pack-merged-1.21.1-2.2.0.jar",
+                     "size":  181530,
+                     "sha1":  "49f25ce60f0a3f21923610b86a0206176d3edc06"
+                 },
+                 {
+                     "name":  "Ender\u0027s Delight",
+                     "file":  "endersdelight-1.3.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8570/814/endersdelight-1.3.1.jar",
+                     "size":  152797,
+                     "sha1":  "a3a9f7fd621f14461d37357463dbd16c67d2badf"
+                 },
+                 {
+                     "name":  "End Respawn Anchor",
+                     "file":  "EndRespawnAnchorMod.jar",
+                     "url":  "https://edge.forgecdn.net/files/5535/262/EndRespawnAnchorMod.jar",
+                     "size":  47097,
+                     "sha1":  "8f4f25fdac141f78152527dc6bdcf2d825419ff0"
+                 },
+                 {
+                     "name":  "Energized Power",
+                     "file":  "energizedpower-3.0.1+1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/8932/470/energizedpower-3.0.1%2b1.21.1-neoforge.jar",
+                     "size":  6216588,
+                     "sha1":  "4ccecba73e437bdadea3fdde1780c8f4d52fc948"
+                 },
+                 {
+                     "name":  "Entity Culling Fabric/Forge",
+                     "file":  "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/9100/286/entityculling-neoforge-1.11.3-mc1.21.1.jar",
+                     "size":  1510075,
+                     "sha1":  "f122f84f329793675b2625d51b77f990d7de3579"
+                 },
+                 {
+                     "name":  "EvoLoginTimeout",
+                     "file":  "EvoLoginTimeout-NeoForge-1.21.1-1.0.9.jar",
+                     "url":  "https://edge.forgecdn.net/files/8357/855/EvoLoginTimeout-NeoForge-1.21.1-1.0.9.jar",
+                     "size":  20993,
+                     "sha1":  "7f115fb57a139268bde8d4d4234f433b351e08d1"
+                 },
+                 {
+                     "name":  "Expanded Delight",
+                     "file":  "expandeddelight-0.1.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/7441/587/expandeddelight-0.1.4.jar",
+                     "size":  547554,
+                     "sha1":  "cf26fe18c3a9deec525fe0f0e7c2d3b9f4e9f484"
+                 },
+                 {
+                     "name":  "[ESC] Extra Special Core",
+                     "file":  "extraspecialcore-2.0.3+1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/8886/498/extraspecialcore-2.0.3%2b1.21.1-neoforge.jar",
+                     "size":  4160612,
+                     "sha1":  "d8bd2505fb2c21e2fb345703c3155e81bdb091f0"
+                 },
+                 {
+                     "name":  "[ESH] Extra Special Hub",
+                     "file":  "extraspecialhub-1.0.1+1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/8886/500/extraspecialhub-1.0.1%2b1.21.1-neoforge.jar",
+                     "size":  166201,
+                     "sha1":  "b3690c3338ac60159094cbd9545b781daa62cfe4"
+                 },
+                 {
+                     "name":  "[ESL] Extra Special LIB",
+                     "file":  "extraspeciallib-1.1.0+1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/8872/318/extraspeciallib-1.1.0%2b1.21.1-neoforge.jar",
+                     "size":  99376,
+                     "sha1":  "8f8369d40d0110cc7aa6f305961819679f1b74ca"
+                 },
+                 {
+                     "name":  "Extreme sound muffler - (Neo)Forge",
+                     "file":  "ExtremeSoundMuffler-3.57_NeoForge-1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/9039/351/ExtremeSoundMuffler-3.57_NeoForge-1.21.jar",
+                     "size":  270493,
+                     "sha1":  "c9f51a7a057230ae06ca1e830cad2752dcbfd08b"
+                 },
+                 {
+                     "name":  "Fantasy Armor (Medieval Series)",
+                     "file":  "fantasy-armor-1.3.1-1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/9407/990/fantasy-armor-1.3.1-1.21.1-neoforge.jar",
+                     "size":  581620,
+                     "sha1":  "a0dfcede4dccdbce775654168a9bcb6305db0fb1"
+                 },
+                 {
+                     "name":  "Farmer\u0027s Delight",
+                     "file":  "FarmersDelight-1.21.1-1.3.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/8765/184/FarmersDelight-1.21.1-1.3.4.jar",
+                     "size":  3160490,
+                     "sha1":  "27675ddfcb8cc37e6ea1ab6c15051c7949d94657"
+                 },
+                 {
+                     "name":  "FastFurnace",
+                     "file":  "FastFurnace-1.21.1-9.0.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6751/551/FastFurnace-1.21.1-9.0.1.jar",
+                     "size":  4623,
+                     "sha1":  "acdcdc7c61b49b3b04490fce9843dcf8b531dfc3"
+                 },
+                 {
+                     "name":  "Fast Leaf Decay",
+                     "file":  "fastleafdecay-35.jar",
+                     "url":  "https://edge.forgecdn.net/files/5849/90/fastleafdecay-35.jar",
+                     "size":  9511,
+                     "sha1":  "589f05dcd58d3708cee9046b23fe11fb81a25d2e"
+                 },
+                 {
+                     "name":  "FastWorkbench",
+                     "file":  "FastWorkbench-1.21.1-9.1.3.jar",
+                     "url":  "https://edge.forgecdn.net/files/6751/534/FastWorkbench-1.21.1-9.1.3.jar",
+                     "size":  28635,
+                     "sha1":  "7343b63ded70c0546811c768118d16d3a86418ee"
+                 },
+                 {
+                     "name":  "FerriteCore ((Neo)Forge)",
+                     "file":  "ferritecore-7.0.3-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/7524/151/ferritecore-7.0.3-neoforge.jar",
+                     "size":  121559,
+                     "sha1":  "9563692efb708b6b568df27a01ec52f6311928ef"
+                 },
+                 {
+                     "name":  "Forgified Fabric API",
+                     "file":  "forgified-fabric-api-0.116.15+2.3.6+1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/9195/559/forgified-fabric-api-0.116.15%2b2.3.6%2b1.21.1.jar",
+                     "size":  5613208,
+                     "sha1":  "a6f0e7b7c277fab7174bca4943fba7bdf3f74ed7"
+                 },
+                 {
+                     "name":  "Framework",
+                     "file":  "framework-neoforge-1.21.1-0.13.11.jar",
+                     "url":  "https://edge.forgecdn.net/files/7530/361/framework-neoforge-1.21.1-0.13.11.jar",
+                     "size":  387334,
+                     "sha1":  "e46eb138fbb13a12f37154fb4ec407d64b326475"
+                 },
+                 {
+                     "name":  "Freecam",
+                     "file":  "freecam-neoforge-1.3.0+mc1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/5572/364/freecam-neoforge-1.3.0%2bmc1.21.jar",
+                     "size":  1137632,
+                     "sha1":  "428eee42f39e6f4c36a3fed2fc127ee9cbd5fa0c"
+                 },
+                 {
+                     "name":  "FTB Chunks (NeoForge)",
+                     "file":  "ftb-chunks-neoforge-2101.1.22.jar",
+                     "url":  "https://edge.forgecdn.net/files/8791/113/ftb-chunks-neoforge-2101.1.22.jar",
+                     "size":  655807,
+                     "sha1":  "a53f1bb7965c6954a348d4f321f03d3971ad503f"
+                 },
+                 {
+                     "name":  "FTB Library (NeoForge)",
+                     "file":  "ftb-library-neoforge-2101.1.37.jar",
+                     "url":  "https://edge.forgecdn.net/files/9008/89/ftb-library-neoforge-2101.1.37.jar",
+                     "size":  1439881,
+                     "sha1":  "b6e503587afcd678ec257e4abdc6362ff18c2fef"
+                 },
+                 {
+                     "name":  "FTB Teams (NeoForge)",
+                     "file":  "ftb-teams-neoforge-2101.1.11.jar",
+                     "url":  "https://edge.forgecdn.net/files/8724/782/ftb-teams-neoforge-2101.1.11.jar",
+                     "size":  308236,
+                     "sha1":  "62b65f752d0326edd13244e58d5f2aec035da4e9"
+                 },
+                 {
+                     "name":  "MrCrayfish\u0027s Furniture Mod Tools: Refurbished",
+                     "file":  "furniture_mod_tools_refurbished-1.0.0-neoforge-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/7336/865/furniture_mod_tools_refurbished-1.0.0-neoforge-1.21.1.jar",
+                     "size":  233067,
+                     "sha1":  "613a472a7485b99a63be3e9d79e3779022f54430"
+                 },
+                 {
+                     "name":  "Fusion (Connected Textures)",
+                     "file":  "fusion-1.3.16-neoforge-mc1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/9070/353/fusion-1.3.16-neoforge-mc1.21.1.jar",
+                     "size":  947335,
+                     "sha1":  "c3cd7c2718583aa5a12e8502c6b92e050bad0c19"
+                 },
+                 {
+                     "name":  "Fzzy Config",
+                     "file":  "fzzy_config-0.7.7+1.21+neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/8883/390/fzzy_config-0.7.7%2b1.21%2bneoforge.jar",
+                     "size":  2392693,
+                     "sha1":  "518eadc53c065a74a49207769209c116e77d1849"
+                 },
+                 {
+                     "name":  "Create Aeronautics: Gadgets \u0026 Gizmos",
+                     "file":  "gadgets-and-gizmos-bundled-2.0-pre-release-3.jar",
+                     "url":  "https://edge.forgecdn.net/files/9209/821/gadgets-and-gizmos-bundled-2.0-pre-release-3.jar",
+                     "size":  36305254,
+                     "sha1":  "0c52ddff24ba915895603c62fa972a2ad41ce6df"
+                 },
+                 {
+                     "name":  "GeckoLib",
+                     "file":  "geckolib-neoforge-1.21.1-4.9.3.jar",
+                     "url":  "https://edge.forgecdn.net/files/8893/490/geckolib-neoforge-1.21.1-4.9.3.jar",
+                     "size":  634531,
+                     "sha1":  "5cfe835472a5c5457ae9ac192d9d7b317454d5ac"
+                 },
+                 {
+                     "name":  "GuideME",
+                     "file":  "guideme-21.1.19.jar",
+                     "url":  "https://edge.forgecdn.net/files/8897/145/guideme-21.1.19.jar",
+                     "size":  9311992,
+                     "sha1":  "e85cd4c266f974dd360c46e8dad7ecf4c7ee96c6"
+                 },
+                 {
+                     "name":  "Handcrafted",
+                     "file":  "handcrafted-neoforge-1.21.1-4.0.3.jar",
+                     "url":  "https://edge.forgecdn.net/files/6330/30/handcrafted-neoforge-1.21.1-4.0.3.jar",
+                     "size":  7132842,
+                     "sha1":  "8ecd27f1d66f9b742cfae3c8ffa773765f574b52"
+                 },
+                 {
+                     "name":  "Harvest with ease",
+                     "file":  "harvest-with-ease-neoforge-1.21-9.4.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/5968/872/harvest-with-ease-neoforge-1.21-9.4.0.jar",
+                     "size":  483625,
+                     "sha1":  "26d0f6f428f04110351f0274fda4ffe3620df38d"
+                 },
+                 {
+                     "name":  "Haven Trowel",
+                     "file":  "HavenTrowel-NeoForge-1.21.1-1.0.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/6111/771/HavenTrowel-NeoForge-1.21.1-1.0.0.jar",
+                     "size":  31534,
+                     "sha1":  "c0aea5ce7c52ba997d27923ba1ce6bf4051748d6"
+                 },
+                 {
+                     "name":  "Holycube Backport",
+                     "file":  "Holycube Backport-1.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/6460/866/Holycube%20Backport-1.4.jar",
+                     "size":  3870567,
+                     "sha1":  "efd39395b9f98b142983234cee46352887e4900f"
+                 },
+                 {
+                     "name":  "Holycube Additions",
+                     "file":  "holycube_additions_yassou-1.4.1-neoforge-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6840/743/holycube_additions_yassou-1.4.1-neoforge-1.21.1.jar",
+                     "size":  3688603,
+                     "sha1":  "b1458fa98abe21e03734a1fa86927740ca1ae442"
+                 },
+                 {
+                     "name":  "HolyWrench: Survival Debug Stick",
+                     "file":  "holywrench-1.1.1+1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6474/671/holywrench-1.1.1%2b1.21.1.jar",
+                     "size":  64860,
+                     "sha1":  "8cf783e86f81bab7a92194cc873cf96b5e6c56f6"
+                 },
+                 {
+                     "name":  "Immersive Aircraft",
+                     "file":  "immersive_aircraft-neoforge-1.7.0+1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/9224/351/immersive_aircraft-neoforge-1.7.0%2b1.21.1.jar",
+                     "size":  2543237,
+                     "sha1":  "5cf33cd634a88ec5728668bf13421645f11fbbe4"
+                 },
+                 {
+                     "name":  "Inventory Sorter",
+                     "file":  "inventorysorter-1.21.1-24.0.24.jar",
+                     "url":  "https://edge.forgecdn.net/files/7188/660/inventorysorter-1.21.1-24.0.24.jar",
+                     "size":  53363,
+                     "sha1":  "8c842959ecb1927e1c7049d41d024fadf329a584"
+                 },
+                 {
+                     "name":  "Invisible Item Frame",
+                     "file":  "invisible_itemframes_tweaks-1.0.1-neoforge-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8783/441/invisible_itemframes_tweaks-1.0.1-neoforge-1.21.1.jar",
+                     "size":  4997,
+                     "sha1":  "0a1532a5f836b5d7d12db047fb1fe7a2462494b2"
+                 },
+                 {
+                     "name":  "Jade 🔍",
+                     "file":  "Jade-1.21.1-NeoForge-15.10.6.jar",
+                     "url":  "https://edge.forgecdn.net/files/8591/319/Jade-1.21.1-NeoForge-15.10.6.jar",
+                     "size":  726853,
+                     "sha1":  "88ee316e68900080b017f60c12162e2731924cf8"
+                 },
+                 {
+                     "name":  "Jade Addons (Neo/Forge)",
+                     "file":  "JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/9056/575/JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+                     "size":  82315,
+                     "sha1":  "479b327078f8f0091e2413675d1236c931f68cf4"
+                 },
+                 {
+                     "name":  "Just Enough Effect Descriptions (JEED)",
+                     "file":  "jeed-1.21-2.3.5-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/9079/612/jeed-1.21-2.3.5-neoforge.jar",
+                     "size":  166779,
+                     "sha1":  "4eadb48f3f19f0a42226b9617cdbb27e84543fcc"
+                 },
+                 {
+                     "name":  "Just Enough Items (JEI)",
+                     "file":  "jei-1.21.1-neoforge-19.64.0.455.jar",
+                     "url":  "https://edge.forgecdn.net/files/9205/121/jei-1.21.1-neoforge-19.64.0.455.jar",
+                     "size":  2375741,
+                     "sha1":  "f6d6fc08d54c40752926b570a2220471e8c45c1a"
+                 },
+                 {
+                     "name":  "JourneyMap",
+                     "file":  "journeymap-neoforge-1.21.1-6.0.9.jar",
+                     "url":  "https://edge.forgecdn.net/files/8923/668/journeymap-neoforge-1.21.1-6.0.9.jar",
+                     "size":  4320499,
+                     "sha1":  "3a5c86e620a7d5aa53b6e42ca4a1577bbba1d332"
+                 },
+                 {
+                     "name":  "Just Enough Beacons Reforged [Forge | Fabric | NeoForge]",
+                     "file":  "JustEnoughBeacons-NeoForge-1.21-1.3.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/6137/283/JustEnoughBeacons-NeoForge-1.21-1.3.0.jar",
+                     "size":  254318,
+                     "sha1":  "654ccc6863fd35f6b73d43db468b72606a461df5"
+                 },
+                 {
+                     "name":  "Kiwi 🥝 (Neo/Forge)",
+                     "file":  "Kiwi-1.21.1-NeoForge-15.8.7.jar",
+                     "url":  "https://edge.forgecdn.net/files/8423/62/Kiwi-1.21.1-NeoForge-15.8.7.jar",
+                     "size":  1539578,
+                     "sha1":  "d5c1d9f814bf146459f6e5e169c744c3e5bc184e"
+                 },
+                 {
+                     "name":  "Konkrete",
+                     "file":  "konkrete_neoforge_1.9.9_MC_1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/5453/385/konkrete_neoforge_1.9.9_MC_1.21.jar",
+                     "size":  618842,
+                     "sha1":  "97771eb287d5ac7fe667d1df9493d5e54c8ca1fa"
+                 },
+                 {
+                     "name":  "Kotlin for Forge",
+                     "file":  "kotlinforforge-5.12.0-all.jar",
+                     "url":  "https://edge.forgecdn.net/files/8335/665/kotlinforforge-5.12.0-all.jar",
+                     "size":  7279276,
+                     "sha1":  "a2032c921e93a0ccb0db5d742167e3139c2de01b"
+                 },
+                 {
+                     "name":  "KubeJS",
+                     "file":  "kubejs-neoforge-2101.7.2-build.377.jar",
+                     "url":  "https://edge.forgecdn.net/files/8843/626/kubejs-neoforge-2101.7.2-build.377.jar",
+                     "size":  2294111,
+                     "sha1":  "150c5d6efc09b969ac350ea205128dff832e0850"
+                 },
+                 {
+                     "name":  "Lootr (Forge \u0026 NeoForge)",
+                     "file":  "lootr-neoforge-1.21.1-1.11.38.127.jar",
+                     "url":  "https://edge.forgecdn.net/files/8968/561/lootr-neoforge-1.21.1-1.11.38.127.jar",
+                     "size":  1075929,
+                     "sha1":  "7a305b581abd90e1a8b7c1bb5eb4511d2653aa58"
+                 },
+                 {
+                     "name":  "Lychee (Neo/Forge)",
+                     "file":  "Lychee-1.21.1-NeoForge-6.7.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/9225/58/Lychee-1.21.1-NeoForge-6.7.1.jar",
+                     "size":  1037749,
+                     "sha1":  "d887bcd4e1a50867d68ebf34f69e66d72c989b01"
+                 },
+                 {
+                     "name":  "Mahou Tsukai",
+                     "file":  "mahoutsukai-1.21.1-v1.36.28.jar",
+                     "url":  "https://edge.forgecdn.net/files/8860/405/mahoutsukai-1.21.1-v1.36.28.jar",
+                     "size":  5045088,
+                     "sha1":  "9049114ceea69d35e7469838f5a23d2655ebf133"
+                 },
+                 {
+                     "name":  "Mapper Base",
+                     "file":  "mapperbase-1.21.1-7.1.1.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/6557/331/mapperbase-1.21.1-7.1.1.0.jar",
+                     "size":  223984,
+                     "sha1":  "e471771dc903aa9dc017e390c8e9fd4a99f4ad50"
+                 },
+                 {
+                     "name":  "Marvel Superheroes",
+                     "file":  "marvel-2.1.0-pre6-1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/6739/364/marvel-2.1.0-pre6-1.21.1-neoforge.jar",
+                     "size":  4283288,
+                     "sha1":  "6badd2aaa8d362410de0cbe339505001de55a656"
+                 },
+                 {
+                     "name":  "Create Mechanical Cow",
+                     "file":  "mechanical_cow-1.21.1-1.2.2-6.0.10.jar",
+                     "url":  "https://edge.forgecdn.net/files/8418/616/mechanical_cow-1.21.1-1.2.2-6.0.10.jar",
+                     "size":  187279,
+                     "sha1":  "c382a07fece23912cb1f6d864fcb84ce369e607f"
+                 },
+                 {
+                     "name":  "Mechanicals Lib",
+                     "file":  "mechanicals-1.21.1-1.1.6.jar",
+                     "url":  "https://edge.forgecdn.net/files/8418/818/mechanicals-1.21.1-1.1.6.jar",
+                     "size":  2022181,
+                     "sha1":  "65818a9a904983c39acfd7b2da3fe784bd35e83b"
+                 },
+                 {
+                     "name":  "Mekanism",
+                     "file":  "Mekanism-1.21.1-10.7.19.85.jar",
+                     "url":  "https://edge.forgecdn.net/files/7904/58/Mekanism-1.21.1-10.7.19.85.jar",
+                     "size":  11976009,
+                     "sha1":  "b78945c40cfe7640408f3fd1e44da385a8c8b805"
+                 },
+                 {
+                     "name":  "Mekanism Generators",
+                     "file":  "MekanismGenerators-1.21.1-10.7.19.85.jar",
+                     "url":  "https://edge.forgecdn.net/files/7904/61/MekanismGenerators-1.21.1-10.7.19.85.jar",
+                     "size":  1114598,
+                     "sha1":  "44c4d8006597580ff7e4101b5a22f7b426cdcaf6"
+                 },
+                 {
+                     "name":  "Melody",
+                     "file":  "melody_neoforge_1.0.10_MC_1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/5453/382/melody_neoforge_1.0.10_MC_1.21.jar",
+                     "size":  36096,
+                     "sha1":  "e83052a92c4ca0016bcfe7f0207273983dc84698"
+                 },
+                 {
+                     "name":  "MezzConfig",
+                     "file":  "mezz_config-1.21.1-neoforge-0.6.8-standalone.jar",
+                     "url":  "https://edge.forgecdn.net/files/9048/666/mezz_config-1.21.1-neoforge-0.6.8-standalone.jar",
+                     "size":  327173,
+                     "sha1":  "d99ed592d8ab7105c00444047be7d8346d694ba3"
+                 },
+                 {
+                     "name":  "Create: Molten Vents",
+                     "file":  "molten_vents-1.21.1-2.1.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6803/367/molten_vents-1.21.1-2.1.1.jar",
+                     "size":  88500,
+                     "sha1":  "0d645330128d1d7dc0b330760f4517d3ff4a2a9d"
+                 },
+                 {
+                     "name":  "MonoLib",
+                     "file":  "monolib-neoforge-1.21.1-4.1.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/9050/710/monolib-neoforge-1.21.1-4.1.2.jar",
+                     "size":  190083,
+                     "sha1":  "0bb1eb02b787cbf4a7caab91a8999cedc6ea4085"
+                 },
+                 {
+                     "name":  "Moonlight Lib",
+                     "file":  "moonlight-1.21.1-3.7.2-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/9122/548/moonlight-1.21.1-3.7.2-neoforge.jar",
+                     "size":  2299162,
+                     "sha1":  "0da45e6bc941f4b9b18dda24f8d047431ddc7226"
+                 },
+                 {
+                     "name":  "MoreBeeInfo",
+                     "file":  "MoreBeeInfo-neoforge-1.21-2.0.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/8102/16/MoreBeeInfo-neoforge-1.21-2.0.0.jar",
+                     "size":  89896,
+                     "sha1":  "f3e3d44330789a1be250e91ad0f7b1e5af0c2be7"
+                 },
+                 {
+                     "name":  "More Overlays Updated",
+                     "file":  "moreoverlays-1.24.2-mc1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/6981/252/moreoverlays-1.24.2-mc1.21.1-neoforge.jar",
+                     "size":  112984,
+                     "sha1":  "21e8bd61c5e146a9574266015d3f64621c2d9e18"
+                 },
+                 {
+                     "name":  "Create: Simulated Jet Engines | Aero Propulsion | Create Aeronautics",
+                     "file":  "morepropulsion-1.4.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/8746/527/morepropulsion-1.4.0.jar",
+                     "size":  969653,
+                     "sha1":  "a5bad311eeecbf2aaa42eba081a86afb9a873cbc"
+                 },
+                 {
+                     "name":  "Mouse Tweaks",
+                     "file":  "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/5637/846/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+                     "size":  73938,
+                     "sha1":  "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc"
+                 },
+                 {
+                     "name":  "My Nether\u0027s Delight",
+                     "file":  "MyNethersDelight-1.21.1-1.10.4.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8854/319/MyNethersDelight-1.21.1-1.10.4.1.jar",
+                     "size":  905059,
+                     "sha1":  "9c54439d65e77c7b4b711831138f81f3a849ff35"
+                 },
+                 {
+                     "name":  "OpticManager",
+                     "file":  "OpticManager_NEOFORGE_v1.3.3_mc1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6374/712/OpticManager_NEOFORGE_v1.3.3_mc1.21.1.jar",
+                     "size":  17223,
+                     "sha1":  "5368fbeb101f85c8aa2587531a89c24baf5239e1"
+                 },
+                 {
+                     "name":  "oωo (owo-lib)",
+                     "file":  "owo-lib-neoforge-0.12.15.6-beta.1+1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/9215/303/owo-lib-neoforge-0.12.15.6-beta.1%2b1.21.jar",
+                     "size":  1223197,
+                     "sha1":  "3a7f843ce3a4d24f8765a74bc5dde914b316b992"
+                 },
+                 {
+                     "name":  "Packet Fixer",
+                     "file":  "packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+                     "url":  "https://edge.forgecdn.net/files/7221/528/packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+                     "size":  46623,
+                     "sha1":  "a8bb6e25807682e72c23bf4065f3cd5f6373ece3"
+                 },
+                 {
+                     "name":  "Paragliders",
+                     "file":  "Paraglider-neoforge-21.1.5.jar",
+                     "url":  "https://edge.forgecdn.net/files/7795/89/Paraglider-neoforge-21.1.5.jar",
+                     "size":  658184,
+                     "sha1":  "39043f24e897fade07a138bb8d60bfe08d8103b1"
+                 },
+                 {
+                     "name":  "Particular ✨ Reforged",
+                     "file":  "particular-1.21.1-NeoForge-1.5.7.jar",
+                     "url":  "https://edge.forgecdn.net/files/8662/697/particular-1.21.1-NeoForge-1.5.7.jar",
+                     "size":  315841,
+                     "sha1":  "d6d33e8233481ad8fc6f8c351f52783ed431a800"
+                 },
+                 {
+                     "name":  "Patchouli",
+                     "file":  "Patchouli-1.21.1-93-NEOFORGE.jar",
+                     "url":  "https://edge.forgecdn.net/files/7730/942/Patchouli-1.21.1-93-NEOFORGE.jar",
+                     "size":  646777,
+                     "sha1":  "5413bb9b8fc35ebe46b06b48bf9afafbd8471140"
+                 },
+                 {
+                     "name":  "Create: Sound of Steam",
+                     "file":  "pipeorgans-0.8.2+1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/7315/860/pipeorgans-0.8.2%2b1.21.1.jar",
+                     "size":  6593821,
+                     "sha1":  "112adb2a6f8d9ff60ebd52602f1b01ea96a37920"
+                 },
+                 {
+                     "name":  "Placebo",
+                     "file":  "Placebo-1.21.1-9.9.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/9153/39/Placebo-1.21.1-9.9.4.jar",
+                     "size":  326063,
+                     "sha1":  "007d52a42020a331d5272495f6d676e0ad1a2c13"
+                 },
+                 {
+                     "name":  "Pottery (Additional Pots)",
+                     "file":  "pottery-1.0.2a-neoforge-mc1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/5691/922/pottery-1.0.2a-neoforge-mc1.21.jar",
+                     "size":  696246,
+                     "sha1":  "7db7a3a63e7db18d3f425e219e6f8dd0a690c635"
+                 },
+                 {
+                     "name":  "Create: Power Chip",
+                     "file":  "powerchip-2.1.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/8958/294/powerchip-2.1.2.jar",
+                     "size":  155648,
+                     "sha1":  "9008b3d026d9a6ddb212314162b9b19f35cf59d7"
+                 },
+                 {
+                     "name":  "Create: Power Grid",
+                     "file":  "powergrid-mc1.21.1-0.6.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/8880/715/powergrid-mc1.21.1-0.6.2.jar",
+                     "size":  5738480,
+                     "sha1":  "e09452dac8202e31f282149d45c49dcdb218bd54"
+                 },
+                 {
+                     "name":  "Prickle",
+                     "file":  "prickle-neoforge-1.21.1-21.1.11.jar",
+                     "url":  "https://edge.forgecdn.net/files/6961/457/prickle-neoforge-1.21.1-21.1.11.jar",
+                     "size":  84812,
+                     "sha1":  "5174059ecf97340a0de5ef211b938de26c4eaa36"
+                 },
+                 {
+                     "name":  "Puzzles Lib",
+                     "file":  "puzzleslib-v21.1.64-mc1.21.1+neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/9130/151/puzzleslib-v21.1.64-mc1.21.1%2bneoforge.jar",
+                     "size":  1451067,
+                     "sha1":  "8562ac65d4f2a55365d4522934fb0e00cd3d3ec3"
+                 },
+                 {
+                     "name":  "Create Aeronautics: Aerodynamics For Blocks (Simulated)",
+                     "file":  "realistic_aerodynamics-0.1.3.jar",
+                     "url":  "https://edge.forgecdn.net/files/8652/453/realistic_aerodynamics-0.1.3.jar",
+                     "size":  30976,
+                     "sha1":  "e5ac2a273fcb42ca6f356311090d67526ed72216"
+                 },
+                 {
+                     "name":  "Refurbished Furniture On Create:Aeronautics\u0027s_fixes",
+                     "file":  "Refurbished_Furniture_On_Create-Aeronautics\u0027s_fixes-NeoForge1.21.1-1.1.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/9017/268/Refurbished_Furniture_On_Create-Aeronautics%27s_fixes-NeoForge1.21.1-1.1.0.jar",
+                     "size":  18910,
+                     "sha1":  "65e4a62533e325ace973a64c493e45bf831e1318"
+                 },
+                 {
+                     "name":  "MrCrayfish\u0027s Furniture Mod: Refurbished",
+                     "file":  "refurbished_furniture-neoforge-1.21.1-1.0.22.jar",
+                     "url":  "https://edge.forgecdn.net/files/7473/565/refurbished_furniture-neoforge-1.21.1-1.0.22.jar",
+                     "size":  7133477,
+                     "sha1":  "6c209e6b755ff26218efd55aedf2dea49183d29b"
+                 },
+                 {
+                     "name":  "Resourceful Config",
+                     "file":  "resourcefulconfig-neoforge-1.21-3.0.11.jar",
+                     "url":  "https://edge.forgecdn.net/files/6467/772/resourcefulconfig-neoforge-1.21-3.0.11.jar",
+                     "size":  341009,
+                     "sha1":  "6bf2b6ea9c071c00a2abcdc552667fb6f7d21031"
+                 },
+                 {
+                     "name":  "Resourceful Lib",
+                     "file":  "resourcefullib-neoforge-1.21-3.0.12.jar",
+                     "url":  "https://edge.forgecdn.net/files/5973/188/resourcefullib-neoforge-1.21-3.0.12.jar",
+                     "size":  484332,
+                     "sha1":  "24389c8e48ff0e8594e4686b750c494c66a5f8df"
+                 },
+                 {
+                     "name":  "Rhino",
+                     "file":  "rhino-2101.2.7-build.85.jar",
+                     "url":  "https://edge.forgecdn.net/files/8218/748/rhino-2101.2.7-build.85.jar",
+                     "size":  882075,
+                     "sha1":  "370598a1d2321c8a705ce539eb970375f20150c3"
+                 },
+                 {
+                     "name":  "Ritchie\u0027s Projectile Library",
+                     "file":  "ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/7587/771/ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar",
+                     "size":  76369,
+                     "sha1":  "ec2e4996f8bee8714173e603e379fef8a6901765"
+                 },
+                 {
+                     "name":  "Create Stuff \u0027N Additions x Sable \u0026 Aeronautics Compat",
+                     "file":  "sable_sa_compat-1.0.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/9000/433/sable_sa_compat-1.0.4.jar",
+                     "size":  34881,
+                     "sha1":  "a7c03400abd7b0ff4d56f3c9a7fa19ee22094ab8"
+                 },
+                 {
+                     "name":  "Sable",
+                     "file":  "sable-neoforge-1.21.1-2.0.5.jar",
+                     "url":  "https://edge.forgecdn.net/files/8673/825/sable-neoforge-1.21.1-2.0.5.jar",
+                     "size":  12986136,
+                     "sha1":  "05f666e973d32baaaf405acb9bbed6615b909971"
+                 },
+                 {
+                     "name":  "Sable: Physics Compat",
+                     "file":  "sablephysicscompat-1.3.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/7975/540/sablephysicscompat-1.3.0.jar",
+                     "size":  25334,
+                     "sha1":  "ca5753e923c501acf43ff0d2fcf09f32240504c3"
+                 },
+                 {
+                     "name":  "Searchables",
+                     "file":  "Searchables-neoforge-1.21.1-1.0.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/5831/692/Searchables-neoforge-1.21.1-1.0.2.jar",
+                     "size":  77326,
+                     "sha1":  "5b8a0b43a474c066371b2e16f9bfb88622552a74"
+                 },
+                 {
+                     "name":  "Aeronautics: simulated copycats",
+                     "file":  "sim_copycats-1.3.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/8727/434/sim_copycats-1.3.2.jar",
+                     "size":  388184,
+                     "sha1":  "5191a4741acb58199f7bdb6f162c5fab6abb287f"
+                 },
+                 {
+                     "name":  "Simple Backups",
+                     "file":  "SimpleBackups-1.21-4.0.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/7151/913/SimpleBackups-1.21-4.0.21.jar",
+                     "size":  48608,
+                     "sha1":  "35bb3b98f330e0f6d08466860157a578a1ecfca2"
+                 },
+                 {
+                     "name":  "Simple Hats",
+                     "file":  "simplehats-neoforge-1.21.1-0.4.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/9234/81/simplehats-neoforge-1.21.1-0.4.1.jar",
+                     "size":  1407624,
+                     "sha1":  "db9a2a5e72b0eae36b90962a7f19035f38bb5669"
+                 },
+                 {
+                     "name":  "Smithing Template Viewer for JEI/EMI",
+                     "file":  "smithingtemplateviewer-1.0.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/7452/53/smithingtemplateviewer-1.0.4.jar",
+                     "size":  39702,
+                     "sha1":  "4fea33926fafbd59f7434d1e4e64938ddee5d5db"
+                 },
+                 {
+                     "name":  "Sodium/Embeddium Dynamic Lights",
+                     "file":  "sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6044/477/sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
+                     "size":  299353,
+                     "sha1":  "02e9bc7ba28147cdf2d608ecf4f2c1eab34b4652"
+                 },
+                 {
+                     "name":  "Sodium",
+                     "file":  "sodium-neoforge-0.8.13+mc1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8756/580/sodium-neoforge-0.8.13%2bmc1.21.1.jar",
+                     "size":  1292934,
+                     "sha1":  "1757289be21ed18db5b0d90703fa3db1b2de5693"
+                 },
+                 {
+                     "name":  "project-1748252",
+                     "file":  "solarpunk-1.1.0-1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/9207/72/solarpunk-1.1.0-1.21.1.jar",
+                     "size":  3214566,
+                     "sha1":  "8b6206c33298ab578381664baafccf03d68ea9cc"
+                 },
+                 {
+                     "name":  "Create: Some Assembly Required",
+                     "file":  "someassemblyrequired-5.2.8.jar",
+                     "url":  "https://edge.forgecdn.net/files/7701/961/someassemblyrequired-5.2.8.jar",
+                     "size":  451898,
+                     "sha1":  "5e7fc02b85c7c6f128bdebd65b6133734fce7088"
+                 },
+                 {
+                     "name":  "Sophisticated Backpacks",
+                     "file":  "sophisticatedbackpacks-1.21.1-3.26.12.2208.jar",
+                     "url":  "https://edge.forgecdn.net/files/9154/769/sophisticatedbackpacks-1.21.1-3.26.12.2208.jar",
+                     "size":  1247031,
+                     "sha1":  "ef59863d328e4e949bdaf75f65412d1048b3f9e1"
+                 },
+                 {
+                     "name":  "Sophisticated Backpacks Create Integration",
+                     "file":  "sophisticatedbackpackscreateintegration-1.21.1-0.2.3.194.jar",
+                     "url":  "https://edge.forgecdn.net/files/9151/543/sophisticatedbackpackscreateintegration-1.21.1-0.2.3.194.jar",
+                     "size":  94059,
+                     "sha1":  "6519e78e8aff212826d650b8d803f9a23e1dc1be"
+                 },
+                 {
+                     "name":  "Sophisticated Core",
+                     "file":  "sophisticatedcore-1.21.1-1.5.14.2413.jar",
+                     "url":  "https://edge.forgecdn.net/files/9229/216/sophisticatedcore-1.21.1-1.5.14.2413.jar",
+                     "size":  1818280,
+                     "sha1":  "87a885f84a8e6d315f4617a2ec06a8886b1f2120"
+                 },
+                 {
+                     "name":  "spark",
+                     "file":  "spark-1.10.124-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/6225/208/spark-1.10.124-neoforge.jar",
+                     "size":  3642581,
+                     "sha1":  "9430cc2ab64ff89d698be593769fb9f9ee4efae6"
+                 },
+                 {
+                     "name":  "Storage Drawers",
+                     "file":  "StorageDrawers-neoforge-1.21.1-13.11.4.jar",
+                     "url":  "https://edge.forgecdn.net/files/6995/432/StorageDrawers-neoforge-1.21.1-13.11.4.jar",
+                     "size":  1131419,
+                     "sha1":  "5347db4d1150b132841bd124d1608f812bf8076f"
+                 },
+                 {
+                     "name":  "Straw Statues",
+                     "file":  "StrawStatues-v21.1.0-1.21.1-NeoForge.jar",
+                     "url":  "https://edge.forgecdn.net/files/5732/771/StrawStatues-v21.1.0-1.21.1-NeoForge.jar",
+                     "size":  313043,
+                     "sha1":  "133f187ee682ee71c3db7307b93c572b7951af4b"
+                 },
+                 {
+                     "name":  "SuperMartijn642\u0027s Config Lib",
+                     "file":  "supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/5546/996/supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+                     "size":  207514,
+                     "sha1":  "07452242e389975e8a88b97066f4bae6a4ebe574"
+                 },
+                 {
+                     "name":  "SuperMartijn642\u0027s Core Lib",
+                     "file":  "supermartijn642corelib-1.1.25-neoforge-mc1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/9083/552/supermartijn642corelib-1.1.25-neoforge-mc1.21.jar",
+                     "size":  562683,
+                     "sha1":  "60d45feac8cd2f0b497b013c7fd501b3ae8b6f6d"
+                 },
+                 {
+                     "name":  "Supplementaries",
+                     "file":  "supplementaries-1.21.1-4.0.2-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/9211/734/supplementaries-1.21.1-4.0.2-neoforge.jar",
+                     "size":  13840377,
+                     "sha1":  "af25cb08a82c72b3fb67508071ce627714bd2b57"
+                 },
+                 {
+                     "name":  "Create: Timeless and Classics Zero [TaCZ] Unofficial Port",
+                     "file":  "tacz_c-1.0.2+neoforge.1.21.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8087/867/tacz_c-1.0.2%2bneoforge.1.21.1.jar",
+                     "size":  377543,
+                     "sha1":  "3468c424e12c4357e1d9b46b2c1e7886fa10c08c"
+                 },
+                 {
+                     "name":  "[UNOFFICIAL] TaCZ NeoForge Port",
+                     "file":  "tacz-neoforge-1.21.1-1.1.8-hotfix-r7.jar",
+                     "url":  "https://edge.forgecdn.net/files/9027/337/tacz-neoforge-1.21.1-1.1.8-hotfix-r7.jar",
+                     "size":  57247579,
+                     "sha1":  "c6ef4976de69a46c4e267bd7f91c730d2dc43a4e"
+                 },
+                 {
+                     "name":  "Create: TFMG Community Edition",
+                     "file":  "tfmg-1.21.1-1.3.0-community.jar",
+                     "url":  "https://edge.forgecdn.net/files/8874/829/tfmg-1.21.1-1.3.0-community.jar",
+                     "size":  5427511,
+                     "sha1":  "ebd973f2ab88d6e66fd090b0575c9029dcca1bc8"
+                 },
+                 {
+                     "name":  "Titanium",
+                     "file":  "titanium-1.21-4.0.43.jar",
+                     "url":  "https://edge.forgecdn.net/files/7951/516/titanium-1.21-4.0.43.jar",
+                     "size":  605765,
+                     "sha1":  "e2f62d1bcdd38dd91679a2114e9946d9415746ee"
+                 },
+                 {
+                     "name":  "Toast Control",
+                     "file":  "ToastControl-1.21.1-9.0.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/6751/464/ToastControl-1.21.1-9.0.1.jar",
+                     "size":  21079,
+                     "sha1":  "33477c2db0479c9be33d1ca3b2fa47cf6c97988c"
+                 },
+                 {
+                     "name":  "Create: Tracks",
+                     "file":  "tracks-neoforge-1.21.1-1.0.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/7968/280/tracks-neoforge-1.21.1-1.0.1.jar",
+                     "size":  166455,
+                     "sha1":  "cccd208606d7ac33f483e1e8a237092712a1a2c0"
+                 },
+                 {
+                     "name":  "Create: Trading Floor",
+                     "file":  "trading_floor-3.0.16.jar",
+                     "url":  "https://edge.forgecdn.net/files/7625/579/trading_floor-3.0.16.jar",
+                     "size":  214343,
+                     "sha1":  "7be6d8b24f3120fa6a2520c32a2e6c8c4254322c"
+                 },
+                 {
+                     "name":  "Trash Cans",
+                     "file":  "trashcans-1.1.1-neoforge-mc1.21.jar",
+                     "url":  "https://edge.forgecdn.net/files/8972/358/trashcans-1.1.1-neoforge-mc1.21.jar",
+                     "size":  169263,
+                     "sha1":  "79120eb32cdeb66348a1bceff3972dc2c00b22b5"
+                 },
+                 {
+                     "name":  "Vista",
+                     "file":  "vista-1.21.1-5.5.7-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/8966/27/vista-1.21.1-5.5.7-neoforge.jar",
+                     "size":  5777411,
+                     "sha1":  "29543f7d287f3927f04d06d376696970e4408123"
+                 },
+                 {
+                     "name":  "Wakes Reforged",
+                     "file":  "wakes-1.21.1-NeoForge-1.4.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/8657/118/wakes-1.21.1-NeoForge-1.4.1.jar",
+                     "size":  222430,
+                     "sha1":  "e55b63465e733b0faee50c9c336b82a5bca857a8"
+                 },
+                 {
+                     "name":  "Warfare Wings",
+                     "file":  "warfare_wings-1.1.4-1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/7778/805/warfare_wings-1.1.4-1.21.1-neoforge.jar",
+                     "size":  29565939,
+                     "sha1":  "fdc36cee4776ddef3f8f0f60c624196a1e518c9e"
+                 },
+                 {
+                     "name":  "WATERFrAMES: Multimedia Displays",
+                     "file":  "waterframes-NEOFORGE-mc1.21.1-v2.1.23.jar",
+                     "url":  "https://edge.forgecdn.net/files/8056/721/waterframes-NEOFORGE-mc1.21.1-v2.1.23.jar",
+                     "size":  256825,
+                     "sha1":  "855fad475a0a0be7a8ac20d70f2adc2d91ce0d0b"
+                 },
+                 {
+                     "name":  "WATERMeDIA: Platform Extension (OBSOLETE)",
+                     "file":  "watermedia_youtube_plugin-2.1.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/7543/999/watermedia_youtube_plugin-2.1.2.jar",
+                     "size":  3830072,
+                     "sha1":  "1f4d208ed9292189dd99147a9dae7c1d4bc95ad5"
+                 },
+                 {
+                     "name":  "WATERMeDIA: Multimedia API",
+                     "file":  "watermedia-2.1.37.jar",
+                     "url":  "https://edge.forgecdn.net/files/7281/929/watermedia-2.1.37.jar",
+                     "size":  37046674,
+                     "sha1":  "4a91d20d9a3aa8d66e01f7962d77c974ad538f4f"
+                 },
+                 {
+                     "name":  "WATERViSION: Videoplayer",
+                     "file":  "watervision-NF-mc1.21.1-v0.1.0-alpha.jar",
+                     "url":  "https://edge.forgecdn.net/files/7043/267/watervision-NF-mc1.21.1-v0.1.0-alpha.jar",
+                     "size":  78233,
+                     "sha1":  "3fc5620a518583b8a7ea293a6d79584861e75335"
+                 },
+                 {
+                     "name":  "Waystones",
+                     "file":  "waystones-neoforge-1.21.1-21.1.46.jar",
+                     "url":  "https://edge.forgecdn.net/files/8969/751/waystones-neoforge-1.21.1-21.1.46.jar",
+                     "size":  1223229,
+                     "sha1":  "75718161662d9ec957ba22e10e497788ec1687ba"
+                 },
+                 {
+                     "name":  "Waystones: Sable (Create Aeronautics Addon)",
+                     "file":  "waystonessable-1.0.7.jar",
+                     "url":  "https://edge.forgecdn.net/files/8632/751/waystonessable-1.0.7.jar",
+                     "size":  113903,
+                     "sha1":  "cebbc2cf9a7a8b2255caff04f2109d9611b28091"
+                 },
+                 {
+                     "name":  "WATERMeDIA: Binaries",
+                     "file":  "wm_binaries-3.0.0-beta.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/7425/769/wm_binaries-3.0.0-beta.2.jar",
+                     "size":  179378124,
+                     "sha1":  "7cd8434516fa8fffe1bf406936f2e2eccf617dca"
+                 },
+                 {
+                     "name":  "YetAnotherConfigLib",
+                     "file":  "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+                     "url":  "https://edge.forgecdn.net/files/7437/845/yet_another_config_lib_v3-3.8.2%2b1.21.1-neoforge.jar",
+                     "size":  1118651,
+                     "sha1":  "fe270c9f6e0a8142cf316944087f5109cef08bbb"
+                 },
+                 {
+                     "name":  "Zume",
+                     "file":  "zume-1.2.2.jar",
+                     "url":  "https://edge.forgecdn.net/files/7983/502/zume-1.2.2.jar",
+                     "size":  99445,
+                     "sha1":  "cbd353ee0e2a35d122a758b9cbb26b2f54145f3f"
+                 }
+             ]
+}

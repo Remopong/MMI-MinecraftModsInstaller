@@ -16,6 +16,9 @@
 	# Default: 10
 	# Range: > 1
 	farm_speed = 10
+	#The crops that the farmer will not use
+	#Entries starting with '#' are treated as tags
+	crop_blacklist = ["#easy_villagers:invalid_farmer_crop"]
 
 [iron_farm]
 	#The time in ticks the iron farm takes to spawn a golem
@@ -27,29 +30,29 @@
 	#The minimum amount of time in ticks the trader takes to restock
 	# Default: 1200
 	# Range: > 1
-	min_restock_time = 1
+	min_restock_time = 1200
 	#The maximum amount of time in ticks the trader takes to restock
 	# Default: 3600
 	# Range: > 2
-	max_restock_time = 2
+	max_restock_time = 3600
 
 [auto_trader]
 	#The minimum amount of time in ticks the auto trader takes to restock
 	# Default: 1200
 	# Range: > 1
-	min_restock_time = 100
+	min_restock_time = 1200
 	#The maximum amount of time in ticks the auto trader takes to restock
 	# Default: 3600
 	# Range: > 2
-	max_restock_time = 200
+	max_restock_time = 3600
 	#The cooldown in ticks for the auto trader to do a trade
 	# Default: 20
 	# Range: > 1
-	trade_cooldown = 10
+	trade_cooldown = 20
 
 [villager]
 	#If villagers should make sounds while in the players inventory
-	inventory_sounds = false
+	inventory_sounds = true
 	#How frequent a villager block should make a villager sound
 	#Lower values mean more frequent sounds
 	# Default: 20

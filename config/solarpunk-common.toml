@@ -1,0 +1,424 @@
+	[generators.andesite_solar_panel]
+		#RPM output at dawn and dusk
+		# Default: 8
+		# Range: 1 ~ 256
+		morning_rpm = 8
+		#RPM output at noon (clear weather)
+		# Default: 16
+		# Range: 1 ~ 256
+		noon_rpm = 16
+		#Stress capacity at dawn and dusk
+		# Default: 128
+		# Range: 1 ~ 1000000
+		morning_su = 128
+		#Stress capacity at noon (clear weather)
+		# Default: 256
+		# Range: 1 ~ 1000000
+		noon_su = 256
+
+	[generators.brass_solar_panel]
+		#FE/t generated at dawn and dusk
+		# Default: 40
+		# Range: 1 ~ 100000
+		morning_fe_per_tick = 40
+		#FE/t generated at noon (clear weather)
+		# Default: 80
+		# Range: 1 ~ 100000
+		noon_fe_per_tick = 80
+		#Internal FE buffer capacity
+		# Default: 100000
+		# Range: 1000 ~ 10000000
+		buffer_capacity = 100000
+		#Max FE extracted per tick by adjacent cables
+		# Default: 80
+		# Range: 1 ~ 100000
+		max_extract = 80
+
+	[generators.geyser_cap]
+		#RPM output
+		# Default: 32
+		# Range: 1 ~ 256
+		rpm = 32
+		#Stress capacity
+		# Default: 512
+		# Range: 1 ~ 1000000
+		su = 512
+
+	[generators.kinetic_battery]
+		#RPM output while discharging
+		# Default: 16
+		# Range: 1 ~ 256
+		rpm = 16
+		#Stress capacity while discharging
+		# Default: 16
+		# Range: 1 ~ 1000000
+		su = 16
+		#Maximum stored charge
+		# Default: 1200
+		# Range: 100 ~ 1000000
+		max_charge = 1200
+		#Charge gained per tick while a spinning network is connected
+		# Default: 1.0
+		# Range: 0.01 ~ 100.0
+		charge_rate = 1.0
+		#Charge lost per tick while discharging
+		# Default: 0.5
+		# Range: 0.01 ~ 100.0
+		discharge_rate = 0.5
+
+	[generators.biomass_gasifier]
+		#RPM output while burning
+		# Default: 8
+		# Range: 1 ~ 256
+		rpm = 8
+		#Stress capacity while burning
+		# Default: 256
+		# Range: 1 ~ 1000000
+		su = 256
+
+	[generators.biofuel_engine]
+		#RPM output while running
+		# Default: 16
+		# Range: 1 ~ 256
+		rpm = 16
+		#Stress capacity while running
+		# Default: 512
+		# Range: 1 ~ 1000000
+		su = 512
+
+	[generators.steam_turbine]
+		#Maximum RPM the turbine can reach (at max height)
+		# Default: 64
+		# Range: 1 ~ 256
+		max_rpm = 64
+		#RPM added per rotor layer
+		# Default: 4
+		# Range: 1 ~ 256
+		rpm_per_layer = 4
+		#SU capacity per rotor layer at full blade efficiency (1 brass blade per arm). Default 256 gives 344 064 SU at max height + full brass, beating the Create superheated steam engine (294 912 SU).
+		# Default: 256
+		# Range: 1 ~ 1000000
+		su_per_layer = 256
+		#mB of steam consumed per rotor layer per tick at full blade efficiency (less-efficient blades waste more steam). Default 1 means a max-height turbine consumes 21 mB/t, matching one max-size Solar Power Tower in steam mode at noon.
+		# Default: 1
+		# Range: 1 ~ 10000
+		steam_per_layer_per_tick = 1
+		#mB of steam required to produce 1 mB of condensate water. Higher values mean less water produced per steam consumed. Default 10 means 10 mB steam -> 1 mB water.
+		# Default: 10
+		# Range: 1 ~ 10000
+		condensate_ratio = 10
+
+	[generators.solar_power_tower]
+		#Molten Salt output multiplier. The base rate formula yields 9 at max size
+		#(3x3x20 tower, full sun, full mirror field), so default 2.0 = 18 mB/t while the
+		#sun is up. Production only runs during the daylight half of the day/night cycle,
+		#while a charged Heat Battery drains a steady 1 mB/t around the clock, so 18 mB/t
+		#by day averages out to 9 mB/t over a full day/night cycle - exactly enough to hold
+		#9 Heat Batteries (a max-size boiler's worth) superheated continuously. Raise it for
+		#headroom to recharge a drained bank, cover rainy days, or run more batteries.
+		# Default: 2.0
+		# Range: 0.0 ~ 1000.0
+		salt_output_multiplier = 2.0
+		#Steam output multiplier. Default 7/3 = 21 mB/t at max size, matching one
+		#max-height Steam Turbine's consumption.
+		# Default: 2.3333333333333335
+		# Range: 0.0 ~ 1000.0
+		steam_output_multiplier = 2.3333333333333335
+
+	[generators.serene_seasons]
+		#Scale solar output (both Solar Panels and the Solar Power Tower) with the current season
+		#when Serene Seasons is installed. Summer boosts output, winter cuts it, spring and autumn
+		#sit near neutral, ramping smoothly in between. Has no effect if Serene Seasons is absent.
+		#Assumes Serene Seasons is managing the Overworld (its default) - only Overworld generators
+		#are affected. Set to false to keep flat year-round output even with Serene Seasons present.
+		enabled = true
+		#Peak solar output multiplier at midsummer, in a temperate biome.
+		# Default: 1.15
+		# Range: 1.0 ~ 5.0
+		summer_multiplier = 1.15
+		#Lowest solar output multiplier at midwinter, in a temperate biome. Hot biomes (desert,
+		#savanna, badlands, jungle) barely swing at all regardless, matching Serene Seasons treating
+		#them as seasonless.
+		# Default: 0.7
+		# Range: 0.05 ~ 1.0
+		winter_multiplier = 0.7
+
+	[machines.solar_heater]
+		#Ticks to melt one item
+		# Default: 200
+		# Range: 1 ~ 100000
+		melt_ticks = 200
+		#Ticks to evaporate enough water to produce one salt
+		# Default: 200
+		# Range: 1 ~ 100000
+		evaporation_ticks = 200
+		#mB of water consumed per salt produced
+		# Default: 250
+		# Range: 1 ~ 10000
+		water_per_salt_mb = 250
+
+	[machines.firebox_boiler]
+		#mB of Steam produced (and mB of water consumed, 1:1) per tick while lit.
+		#Kept low on purpose: a maxed-out Solar Power Tower in steam mode makes 21 mB/t.
+		#Matching that with Firebox Boilers means a wall of them plus a steady fuel supply -
+		#meant as an early bootstrap for the Steam Turbine, not a replacement for the tower.
+		# Default: 2
+		# Range: 1 ~ 10000
+		steam_per_tick = 2
+
+	[machines.fermentation_vat]
+		#Ticks per fermentation batch
+		# Default: 400
+		# Range: 1 ~ 100000
+		fermentation_ticks = 400
+		#mB of water consumed per batch (per footprint block)
+		# Default: 1000
+		# Range: 1 ~ 100000
+		water_per_batch_mb = 1000
+		#mB of biofuel produced per batch (per footprint block)
+		# Default: 1000
+		# Range: 1 ~ 100000
+		biofuel_per_batch_mb = 1000
+
+	[machines.biomass_gasifier]
+		#Ticks raw Biomass burns for in the Gasifier.
+		# Default: 200
+		# Range: 1 ~ 100000
+		burn_ticks = 200
+		#Ticks one Biomass Pellet burns for in the Gasifier. Pellets are denser, so they burn longer.
+		# Default: 400
+		# Range: 1 ~ 100000
+		pellet_burn_ticks = 400
+		#Biochar produced per Biomass Pellet burned (raw Biomass always produces 1).
+		# Default: 2
+		# Range: 1 ~ 64
+		pellet_biochar_amount = 2
+
+	[machines.biofuel_engine]
+		#mB of biofuel consumed per consumption cycle
+		# Default: 50
+		# Range: 1 ~ 10000
+		consume_mb = 50
+		#Ticks between each fuel consumption
+		# Default: 40
+		# Range: 1 ~ 10000
+		consume_period_ticks = 40
+
+	[machines.heat_battery]
+		#Maximum heat the battery can store
+		# Default: 80000
+		# Range: 1000 ~ 10000000
+		max_heat = 80000
+		#Heat units gained per mB of molten salt consumed
+		# Default: 10
+		# Range: 1 ~ 10000
+		heat_per_mb = 10
+		#Heat units lost per tick (passive dissipation)
+		# Default: 2
+		# Range: 0 ~ 10000
+		heat_decay_per_tick = 2
+
+	[machines.kinetic_sprinkler]
+		#mB of fluid consumed per cycle
+		# Default: 100
+		# Range: 1 ~ 10000
+		fluid_per_cycle_mb = 100
+		#Horizontal radius (blocks) of the watering area
+		# Default: 2
+		# Range: 1 ~ 16
+		range = 2
+
+	[machines.biofilter]
+		#Stress units consumed while the Biofilter is running
+		# Default: 256
+		# Range: 1 ~ 1000000
+		su = 256
+
+	[machines.fusion_reactor]
+		#mB of steam produced per Blanket module per tick at pure-Beryllium (max output) composition.
+		#Default 4 with the reactor's fixed 42-module Blanket band means ~168 mB/t steam at pure Beryllium.
+		# Default: 4
+		# Range: 1 ~ 10000
+		reactor_steam_per_layer_per_tick = 4
+		#Steam output multiplier at pure-Lithium composition, relative to Beryllium's 1.0.
+		#Default 0.4 means pure Lithium produces 40% of the steam pure Beryllium does per module.
+		# Default: 0.4
+		# Range: 0.01 ~ 2.0
+		reactor_lithium_output_ratio = 0.4
+		#Combined Deuterium + Lithium mB consumed per mB of steam at the pure-Lithium (efficient) extreme.
+		# Default: 2
+		# Range: 1 ~ 10000
+		reactor_fuel_per_steam_mb = 2
+		#Multiplies fuel-per-steam at the pure-Beryllium extreme. Default 3.0 means 6 mB combined
+		#fuel per mB steam there - Beryllium burns fuel faster AND produces more, compounding its
+		#'devour fuel, maximize output' identity.
+		# Default: 3.0
+		# Range: 1.0 ~ 100.0
+		reactor_beryllium_fuel_waste_multiplier = 3.0
+		#Fraction of drawn Lithium that actually breeds into usable Tritium at pure-Beryllium
+		#composition (1.0 = no waste at pure-Lithium). Default 0.5 widens the Deuterium:Lithium
+		#draw ratio from 1:1 at pure-Lithium to 1:2 at pure-Beryllium.
+		# Default: 0.5
+		# Range: 0.01 ~ 1.0
+		reactor_breeder_floor_ratio = 0.5
+
+[tanks]
+	#Steam Turbine: steam input tank capacity (mB)
+	# Default: 16000
+	# Range: 100 ~ 1000000
+	steam_turbine_steam_mb = 16000
+	#Steam Turbine: condensate water tank capacity (mB)
+	# Default: 8000
+	# Range: 100 ~ 1000000
+	steam_turbine_condensate_mb = 8000
+	#Heat Battery: molten salt tank capacity (mB)
+	# Default: 8000
+	# Range: 100 ~ 1000000
+	heat_battery_mb = 8000
+	#Biofuel Engine: fuel tank capacity (mB)
+	# Default: 8000
+	# Range: 100 ~ 1000000
+	biofuel_engine_mb = 8000
+	#Fermentation Vat: fluid capacity per multiblock block (mB)
+	# Default: 8000
+	# Range: 100 ~ 1000000
+	fermentation_vat_per_block_mb = 8000
+	#Solar Power Tower: fluid capacity per multiblock block (mB)
+	# Default: 8000
+	# Range: 100 ~ 1000000
+	solar_power_tower_per_block_mb = 8000
+	#Kinetic Sprinkler: fluid tank capacity (mB)
+	# Default: 4000
+	# Range: 100 ~ 1000000
+	kinetic_sprinkler_mb = 4000
+	#Solar Heater: output fluid tank capacity (mB)
+	# Default: 8000
+	# Range: 100 ~ 1000000
+	solar_heater_mb = 8000
+	#Firebox Boiler: water and steam tank capacity (mB, each tank)
+	# Default: 4000
+	# Range: 100 ~ 1000000
+	firebox_boiler_mb = 4000
+	#Crystallizer: input A, input B, and byproduct output tank capacity (mB, each tank)
+	# Default: 4000
+	# Range: 100 ~ 1000000
+	crystallizer_mb = 4000
+	#Fusion Reactor: steam output tank capacity (mB)
+	# Default: 16000
+	# Range: 100 ~ 1000000
+	fusion_reactor_steam_mb = 16000
+	#Fusion Reactor: Deuterium input tank capacity (mB)
+	# Default: 8000
+	# Range: 100 ~ 1000000
+	fusion_reactor_deuterium_mb = 8000
+
+[multiblocks]
+	#Fermentation Vat: minimum footprint width (2 = 2x2, 3 = 3x3) needed to ferment
+	# Default: 2
+	# Range: 2 ~ 3
+	fermentation_vat_min_width = 2
+	#Fermentation Vat: minimum height needed to ferment
+	# Default: 4
+	# Range: 1 ~ 16
+	fermentation_vat_min_height = 4
+	#Solar Power Tower: minimum footprint width needed to produce Molten Salt
+	# Default: 3
+	# Range: 1 ~ 3
+	solar_power_tower_min_width = 3
+	#Solar Power Tower: minimum block height needed to produce Molten Salt
+	# Default: 3
+	# Range: 1 ~ 20
+	solar_power_tower_min_height = 3
+
+[solar_power_tower_mirrors]
+	#Solar Power Tower: base radius (blocks) of the heliostat mirror field search, before height scaling
+	# Default: 4
+	# Range: 0 ~ 64
+	solar_power_tower_mirror_base_radius = 4
+	#Solar Power Tower: extra mirror field radius (blocks) added per block of tower height
+	# Default: 2
+	# Range: 0 ~ 16
+	solar_power_tower_mirror_radius_per_height = 2
+	#Solar Power Tower: hard cap on the mirror field search radius (blocks), regardless of height
+	# Default: 24
+	# Range: 1 ~ 128
+	solar_power_tower_mirror_max_radius = 24
+	#Solar Power Tower: maximum number of mirrors a single tower will track/count
+	# Default: 128
+	# Range: 1 ~ 512
+	solar_power_tower_max_tracked_mirrors = 128
+
+[world_gen]
+	#Per-attempt spawn chance for Geyser Vents (0 = never, 100 = always)
+	# Default: 100
+	# Range: 0 ~ 100
+	geyser_spawn_chance = 100
+	#Biomes where Geyser Vents can spawn (resource location format, e.g. minecraft:desert)
+	geyser_biomes = ["minecraft:desert", "minecraft:badlands", "minecraft:eroded_badlands", "minecraft:wooded_badlands", "minecraft:savanna", "minecraft:savanna_plateau", "minecraft:windswept_savanna"]
+
+[global_warming]
+	#Enable the global warming system. When on, blocks in the #solarpunk:pollution_sources tag
+	#(campfires, furnaces, blaze burners, steam engines, etc.) emit black smog while active
+	#and slowly convert the biome of their chunk to a dead wasteland.
+	enabled = false
+	#Default pollution units per second for any active source not listed in per_block_pollution.
+	# Default: 5
+	# Range: 0 ~ 1000000
+	pollution_per_active_source_per_second = 5
+	#Per-block pollution overrides in "block_id=amount" format.
+	#Any block in #solarpunk:pollution_sources not listed here uses the default above.
+	per_block_pollution = ["minecraft:campfire=2", "minecraft:soul_campfire=3", "minecraft:furnace=5", "minecraft:blast_furnace=8", "minecraft:smoker=4", "create:lit_blaze_burner=15", "create:steam_engine=20", "createdieselgenerators:diesel_engine=15", "createdieselgenerators:large_diesel_engine=30", "createdieselgenerators:huge_diesel_engine=50", "solarpunk:biofuel_engine=10", "solarpunk:biomass_gasifier=5", "solarpunk:firebox_boiler=6"]
+	#Pollution units per second for each Create Aeronautics portable engine (all 16 dye colours).
+	#Set to 0 to disable. Has no effect if Create Aeronautics is not installed.
+	# Default: 15
+	# Range: 0 ~ 1000000
+	aeronautics_portable_engine_pollution_per_second = 15
+	#Substrings matched against block registry paths for automatic pollution detection.
+	#Any block whose registry path contains one of these keywords, and is not already in
+	##solarpunk:pollution_sources, will emit the fallback pollution amount below.
+	#Blocks with no block entity are ignored even if their name matches.
+	auto_detect_keywords = ["furnace", "engine", "motor", "boiler", "burner", "kiln", "forge", "oven", "incinerator", "smokestack", "generator"]
+	#Pollution units per second emitted by auto-detected blocks (keyword match, no explicit tag entry).
+	# Default: 3
+	# Range: 0 ~ 1000000
+	auto_detect_pollution_per_second = 3
+	#Block IDs that never count as pollution sources, even if in #solarpunk:pollution_sources
+	#or matched by an auto-detect keyword (format: "modid:path").
+	pollution_blacklist = ["create_new_age:generator_coil"]
+	#Block radius around each active pollution source that receives pollution (0 = source chunk only).
+	# Default: 64
+	# Range: 0 ~ 512
+	pollution_radius_blocks = 64
+	#Pollution units removed from each chunk per second (0 = pollution never decays).
+	# Default: 1
+	# Range: 0 ~ 1000000
+	pollution_decay_rate_per_second = 1
+	#Pollution absorbed per leaf block in a chunk each decay interval. 0 to disable tree absorption.
+	# Default: 1
+	# Range: 0 ~ 1000000
+	leaf_absorption_per_interval = 1
+	#Pollution units removed per second, per RPM of rotational speed driving the Biofilter.
+	#Scales with actual speed rather than a flat rate, so a cheap 16 RPM feed and a maxed-out
+	#network don't clean at the same rate for wildly different SU cost. Default 0.625 keeps a
+	#16 RPM Biofilter at the old flat-rate baseline (10/s) while a 256 RPM one reaches 160/s.
+	# Default: 0.625
+	# Range: 0.0 ~ 1000000.0
+	biofilter_absorption_per_rpm = 0.625
+	#Block radius around a Biofilter in which it reduces pollution (0 = own chunk only).
+	# Default: 32
+	# Range: 0 ~ 512
+	biofilter_radius_blocks = 32
+	#Pollution level a chunk must reach before its biome converts.
+	# Default: 10000
+	# Range: > 1
+	biome_decay_threshold = 10000
+	#Ticks between each decay and biome-conversion check (1200 = once per minute).
+	# Default: 1200
+	# Range: 20 ~ 72000
+	biome_decay_interval_ticks = 1200
+	#Random surface blocks replaced per polluted chunk each decay interval (grass dies, leaves fall, flowers wither). 0 to disable.
+	# Default: 8
+	# Range: 0 ~ 256
+	blocks_decayed_per_interval = 8
+	#The biome polluted chunks convert to once they reach the threshold (resource location format).
+	dead_biome = "minecraft:badlands"
