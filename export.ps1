@@ -7,26 +7,20 @@
 #   publish.bat                       -> synchronise + commit + push (un double-clic)
 #   export.ps1                        -> synchronise seulement (pour verifier avant de publier)
 #   export.ps1 -Push                  -> synchronise + commit + push si quelque chose a change
-#   export.ps1 -Auto                  -> mode tache planifiee (voir autosync.ps1) : silencieux, journal dans sync.log
 #   -Instance "C:\...\Instances\X"    -> si l'instance n'est pas MyDATAPACK
 
 param(
     [string]$Instance = "$env:USERPROFILE\curseforge\minecraft\Instances\MyDATAPACK",
-    [switch]$Push,
-    [switch]$Auto
+    [switch]$Push
 )
 
 $ErrorActionPreference = 'Stop'
 Remove-TypeData System.Array -ErrorAction SilentlyContinue   # evite un bug JSON de PowerShell 5.1
 $repo = $PSScriptRoot
 $manifestPath = Join-Path $Instance 'minecraftinstance.json'
-$logFile = Join-Path $repo 'sync.log'
-if ($Auto) { $Push = $true }
 
 function Log($text, [switch]$Warn) {
-    if ($Auto) {
-        Add-Content -Path $logFile -Value ("{0}  {1}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $text)
-    } elseif ($Warn) { Write-Warning $text } else { Write-Host $text }
+    if ($Warn) { Write-Warning $text } else { Write-Host $text }
 }
 
 function Git([string]$arguments) {
@@ -38,13 +32,6 @@ function Git([string]$arguments) {
 
 try {
     if (-not (Test-Path $manifestPath)) { throw "Instance introuvable : $manifestPath" }
-
-    if ($Auto) {
-        # Pas de synchro pendant que le jeu tourne : les configs peuvent etre en cours d'ecriture
-        $running = Get-CimInstance Win32_Process -Filter "Name='javaw.exe' OR Name='java.exe'" |
-            Where-Object { $_.CommandLine -like "*$Instance*" }
-        if ($running) { Log "Jeu en cours, synchro reportee."; exit 0 }
-    }
 
     Log "Lecture de $manifestPath ..."
     $inst = Get-Content $manifestPath -Raw -Encoding UTF8 | ConvertFrom-Json
