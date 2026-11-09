@@ -1,0 +1,67 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Remopong",
+      "uniqueId": "1489e6fb-44e8-469d-bae0-04d783d67b09"
+    },
+    "time": 1792584762530,
+    "type": "Heap dump summary",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/f7C99UV3vp"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Remopong",
+      "uniqueId": "1489e6fb-44e8-469d-bae0-04d783d67b09"
+    },
+    "time": 1792579286355,
+    "type": "Heap dump summary",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/NRFwZfaSsX"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Remopong",
+      "uniqueId": "1489e6fb-44e8-469d-bae0-04d783d67b09"
+    },
+    "time": 1792578461211,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/EHk7mDYaZM"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Remopong",
+      "uniqueId": "1489e6fb-44e8-469d-bae0-04d783d67b09"
+    },
+    "time": 1792578383025,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/z8ebGKHZu2"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Remopong",
+      "uniqueId": "1489e6fb-44e8-469d-bae0-04d783d67b09"
+    },
+    "time": 1792578077556,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/voFpHnwbLr"
+    }
+  }
+]

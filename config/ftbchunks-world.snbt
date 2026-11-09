@@ -14,6 +14,20 @@
 	# Default: false
 	disable_protection: false
 	
+	# If true, fire is prevented from spreading across claims owned by different teams
+	# (unless the target claim has public 'edit block' permissions defined).
+	# False by default; enabling this can potentially lead to server performance issues,
+	# especially when many blocks are on fire
+	# If 'disable_protection' is set to true, this setting is ignored.
+	# Default: false
+	fire_spread_protection: false
+	
+	# If true, fluids are prevented from flowing horizontally across claims owned by different teams (unless the target claim has public 'edit block' permissions defined).
+	# False by default; enabling this can potentially lead to server performance issues, since fluid flow ticks are checked very frequently, especially for large bodies of flowing fluids
+	# If 'disable_protection' is set to true, this setting is ignored.
+	# Default: false
+	flowing_fluid_protection: false
+	
 	# Minimap for clients connecting to this server will be disabled
 	# Default: false
 	force_disable_minimap: false
@@ -73,7 +87,7 @@
 		# You can override this with FTB Ranks 'ftbchunks.max_claimed' permission
 		# Default: 500
 		# Range: -∞ ~ +∞
-		max_claimed_chunks: 1000
+		max_claimed_chunks: 500
 		
 		# Maximum time (in real-world days) where if no player in a team logs in, the team automatically loses their claims.
 		# Prevents chunks being claimed indefinitely by teams who no longer play.
@@ -101,7 +115,7 @@
 		# Default will check this setting for each team
 		# Default: "check"
 		# Valid values: "check", "deny", "allow"
-		fake_players: "allow"
+		fake_players: "check"
 		
 		# Maximum time in days to keep logs of prevented fakeplayer access to a team's claims.
 		# Default: 7
@@ -115,25 +129,25 @@
 		# DEFAULT: allow force-loading IF the team has at least one player with the 'ftbchunks.chunk_load_offline' FTB Ranks permission.
 		# Default: "default"
 		# Valid values: "default", "always", "never"
-		force_load_mode: "always"
+		force_load_mode: "default"
 		
 		# Hard limit for the number of chunks a team can force-load, regardless of how many members. Default of 0 means no hard limit.
 		# Default: 0
 		# Range: 0 ~ 2147483647
-		hard_team_force_limit: 5000
+		hard_team_force_limit: 0
 		
 		# Max force loaded chunks.
 		# You can override this with FTB Ranks 'ftbchunks.max_force_loaded' permission
 		# Default: 25
 		# Range: -∞ ~ +∞
-		max_force_loaded_chunks: 10
+		max_force_loaded_chunks: 500
 		
 		# Maximum time (in real-world days) where if no player in a team logs in, any forceloaded chunks owned by the team are no longer forceloaded.
 		# Prevents chunks being forceloaded indefinitely by teams who no longer play.
 		# Default of 0 means no automatic loss of forceloading.
 		# Default: 0.0
 		# Range: 0.0 ~ 3650.0
-		max_idle_days_before_unforce: 365.0d
+		max_idle_days_before_unforce: 0.0d
 	}
 	team_prop_defaults: {
 		# Default explosion protection for claimed chunks
@@ -143,7 +157,7 @@
 		# Default mode for block breaking and placing in claimed chunks (NeoForge only)
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_block_edit: "public"
+		def_block_edit: "allies"
 		
 		# Default mode for block interaction, breaking and placing in claimed chunks (Fabric only)
 		# Default: "allies"
@@ -153,7 +167,7 @@
 		# Default mode for block interaction (right-click) in claimed chunks (NeoForge only)
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_block_interact: "public"
+		def_block_interact: "allies"
 		
 		# Default claim visibility for claimed chunks
 		# Default: "public"
@@ -163,12 +177,12 @@
 		# Default mode for left-clicking non-living entities (armor stands, item frames...) in claimed chunks
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_entity_attack: "public"
+		def_entity_attack: "allies"
 		
 		# Default mode for entity interaction in claimed chunks
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_entity_interact: "public"
+		def_entity_interact: "allies"
 		
 		# Default allow fake player IDs which are the same as real permitted players
 		# Default: true
@@ -189,7 +203,7 @@
 		# Default long-range player visibility on map
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_player_visibility: "public"
+		def_player_visibility: "allies"
 		
 		# Default PvP setting in claimed chunks
 		# Default: true

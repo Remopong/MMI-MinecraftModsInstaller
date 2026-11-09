@@ -1,9 +1,9 @@
 #If true, it will have durability when used.
-enable_trowel_durability = false
+enable_trowel_durability = true
 #If true, the trowel will use the inventory blocks as well as hotbar blocks, if false it will only use hotbar blocks.
 enable_inventory_blocks = false
 #If true, the trowel will highlight the block that will be placed.
-enable_trowel_highlight = false
+enable_trowel_highlight = true
 #The red value of the highlight color (0.0 - 1.0).
 # Default: 1.0
 # Range: 0.0 ~ 1.0

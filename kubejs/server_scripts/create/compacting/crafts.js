@@ -1,4 +1,6 @@
 ServerEvents.recipes(e => {
+    // Magnetite Block (Fixed using your custom syntax)
+    e.custom({ "type": "create:compacting", "heat_requirement": "heated", "ingredients": [{ "item": "minecraft:basalt" },{ "item": "minecraft:iron_ingot" },{ "item": "minecraft:iron_ingot" },{ "item": "minecraft:iron_ingot" },{ "item": "minecraft:iron_ingot" },{ "item": "minecraft:redstone" },{ "item": "minecraft:redstone" },{ "item": "minecraft:redstone" },{ "item": "minecraft:redstone" } ], "results": [{ "id": "create_new_age:magnetite_block" }]})
     //Gabbro
     e.custom({ "type": "create:compacting", "ingredients": [{ "item": "minecraft:granite" }, { "item": "minecraft:dripstone_block" }, { "type": "fluid_stack", "amount": 100, "fluid": "minecraft:lava" }], "results": [{ "id": "create_d2d:gabbro" }] })
     //Dolomite

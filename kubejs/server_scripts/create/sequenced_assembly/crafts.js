@@ -1,112 +1,47 @@
 ServerEvents.recipes(e => {
+    // Dragon Egg
+    e.recipes.create.sequenced_assembly([
+        'minecraft:dragon_egg'
+    ], 'minecraft:sniffer_egg', [
+        e.recipes.create.filling('kubejs:incomplete_dragon_egg', [
+            'kubejs:incomplete_dragon_egg',
+            Fluid.of('create_dragons_plus:dragons_breath', 250)
+        ])
+    ]).transitionalItem('kubejs:incomplete_dragon_egg').loops(16)
 
-    //Dragon Egg
-    e.custom(
-        {
-            "type": "create:sequenced_assembly",
-            "ingredient": { "item": "minecraft:sniffer_egg" },
-            "loops": 16,
-            "results": [
-                { "id": "minecraft:dragon_egg" }
-            ],
-            "sequence": [
-                {
-                    "type": "create:filling",
-                    "ingredients": [
-                        { "item": "kubejs:incomplete_dragon_egg" },
-                        { "type": "fluid_stack", "amount": 250, "fluid": "create_dragons_plus:dragons_breath" }
-                    ],
-                    "results": [
-                        { "id": "kubejs:incomplete_dragon_egg" }
-                    ]
-                }
-            ],
-            "transitional_item": { "id": "kubejs:incomplete_dragon_egg" }
-        }
-    )
-    //Ominous Bottle
-    e.custom(
-        {
-            "type": "create:sequenced_assembly",
-            "ingredient": { "item": "kubejs:empty_ominous_bottle" },
-            "loops": 1,
-            "results": [{ "id": "minecraft:ominous_bottle" }],
-            "sequence": [
-                {
-                    "type": "create:deploying",
-                    "ingredients": [{ "item": "kubejs:incomplete_ominous_bottle" }, { "item": "minecraft:rotten_flesh" }],
-                    "results": [{ "id": "kubejs:incomplete_ominous_bottle" }]
-                },
-                {
-                    "type": "create:deploying",
-                    "ingredients": [{ "item": "kubejs:incomplete_ominous_bottle" }, { "item": "minecraft:bone" }],
-                    "results": [{ "id": "kubejs:incomplete_ominous_bottle" }]
-                },
-                {
-                    "type": "create:deploying",
-                    "ingredients": [{ "item": "kubejs:incomplete_ominous_bottle" }, { "item": "minecraft:spider_eye" }],
-                    "results": [{ "id": "kubejs:incomplete_ominous_bottle" }]
-                },
-                {
-                    "type": "create:deploying",
-                    "ingredients": [{ "item": "kubejs:incomplete_ominous_bottle" }, { "item": "minecraft:gunpowder" }],
-                    "results": [{ "id": "kubejs:incomplete_ominous_bottle" }]
-                }
-            ],
-            "transitional_item": { "id": "kubejs:incomplete_ominous_bottle" }
-        }
-    )
-    //Pale Oak Heart
-    e.custom(
-        {
-            "type": "create:sequenced_assembly",
-            "ingredient": { "item": "minecraft:pale_oak_log" },
-            "loops": 8,
-            "results": [{ "id": "kubejs:pale_oak_heart" }],
-            "sequence": [
-                {
-                    "type": "create:filling",
-                    "ingredients": [
-                        { "item": "kubejs:incomplete_pale_oak_heart" },
-                        { "type": "fluid_stack", "amount": 250, "fluid": "create_confectionery:caramel" }
-                    ],
-                    "results": [
-                        { "id": "kubejs:incomplete_pale_oak_heart" }
-                    ]
-                },
-                {
-                    "type": "create:deploying",
-                    "ingredients": [{ "item": "kubejs:incomplete_pale_oak_heart" }, { "tag": "minecraft:axes" }],
-                    "results": [{ "id": "kubejs:incomplete_pale_oak_heart" }]
-                }
-            ],
-            "transitional_item": { "id": "kubejs:incomplete_pale_oak_heart" }
-        }
-    )
-    //Raw Steel
-    e.custom(
-        {
-            "type": "create:sequenced_assembly",
-            "ingredient": { "item": "mapperbase:pig_iron_chunk" },
-            "loops": 1,
-            "results": [{ "id": "mapperbase:raw_steel" }],
-            "sequence": [
-                { "type": "create:pressing", "ingredients": [{ "item": "mapperbase:pig_iron_chunk" }], "results": [{ "id": "mapperbase:pig_iron_chunk" }] },
-                {
-                    "type": "create:deploying",
-                    "ingredients": [{ "item": "mapperbase:pig_iron_chunk" }, { "item": "mapperbase:pig_iron_chunk" }],
-                    "results": [{ "id": "mapperbase:pig_iron_chunk" }]
-                },
-                { "type": "create:pressing", "ingredients": [{ "item": "mapperbase:pig_iron_chunk" }], "results": [{ "id": "mapperbase:pig_iron_chunk" }] },
-                {
-                    "type": "create:deploying",
-                    "ingredients": [{ "item": "mapperbase:pig_iron_chunk" }, { "item": "mapperbase:pig_iron_chunk" }],
-                    "results": [{ "id": "mapperbase:pig_iron_chunk" }]
-                },
-                { "type": "create:pressing", "ingredients": [{ "item": "mapperbase:pig_iron_chunk" }], "results": [{ "id": "mapperbase:pig_iron_chunk" }] }
-            ],
-            "transitional_item": { "id": "mapperbase:pig_iron_chunk" }
-        }
-    )
+    // Ominous Bottle
+    e.recipes.create.sequenced_assembly([
+        'minecraft:ominous_bottle'
+    ], 'kubejs:empty_ominous_bottle', [
+        e.recipes.create.deploying('kubejs:incomplete_ominous_bottle', ['kubejs:incomplete_ominous_bottle', 'minecraft:rotten_flesh']),
+        e.recipes.create.deploying('kubejs:incomplete_ominous_bottle', ['kubejs:incomplete_ominous_bottle', 'minecraft:bone']),
+        e.recipes.create.deploying('kubejs:incomplete_ominous_bottle', ['kubejs:incomplete_ominous_bottle', 'minecraft:spider_eye']),
+        e.recipes.create.deploying('kubejs:incomplete_ominous_bottle', ['kubejs:incomplete_ominous_bottle', 'minecraft:gunpowder'])
+    ]).transitionalItem('kubejs:incomplete_ominous_bottle').loops(1)
 
+    // Pale Oak Heart
+    if (Fluid.exists('create_confectionery:caramel')) {
+        e.recipes.create.sequenced_assembly([
+            'kubejs:pale_oak_heart'
+        ], 'minecraft:pale_oak_log', [
+            e.recipes.create.filling('kubejs:incomplete_pale_oak_heart', [
+                'kubejs:incomplete_pale_oak_heart',
+                Fluid.of('create_confectionery:caramel', 250)
+            ]),
+            e.recipes.create.deploying('kubejs:incomplete_pale_oak_heart', ['kubejs:incomplete_pale_oak_heart', '#minecraft:axes'])
+        ]).transitionalItem('kubejs:incomplete_pale_oak_heart').loops(8)
+    }
+
+    // Raw Steel
+    if (Item.exists('mapperbase:pig_iron_chunk') && Item.exists('mapperbase:raw_steel')) {
+        e.recipes.create.sequenced_assembly([
+            'mapperbase:raw_steel'
+        ], 'mapperbase:pig_iron_chunk', [
+            e.recipes.create.pressing('mapperbase:pig_iron_chunk', 'mapperbase:pig_iron_chunk'),
+            e.recipes.create.deploying('mapperbase:pig_iron_chunk', ['mapperbase:pig_iron_chunk', 'mapperbase:pig_iron_chunk']),
+            e.recipes.create.pressing('mapperbase:pig_iron_chunk', 'mapperbase:pig_iron_chunk'),
+            e.recipes.create.deploying('mapperbase:pig_iron_chunk', ['mapperbase:pig_iron_chunk', 'mapperbase:pig_iron_chunk']),
+            e.recipes.create.pressing('mapperbase:pig_iron_chunk', 'mapperbase:pig_iron_chunk')
+        ]).transitionalItem('mapperbase:pig_iron_chunk').loops(1)
+    }
 })

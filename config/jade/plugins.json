@@ -6,8 +6,8 @@
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
     "energy_storage.style": "PROGRESS_BAR",
-    "item_storage.normal_amount": 9,
     "item_storage": true,
+    "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -72,6 +72,12 @@
     "entity": true,
     "entity_variant": true
   },
+  "create_aeronautics_automated_logistics": {
+    "logistics_identity": true
+  },
+  "jadeaddons.computercraft": {
+    "computer_id": true
+  },
   "jade": {
     "coordinates.rel": false,
     "registry_name.special": false,
@@ -86,11 +92,30 @@
   "balm": {
     "jade": true
   },
+  "ae2": {
+    "part_icon": true,
+    "charger": true,
+    "debug": true,
+    "part_tooltip": true,
+    "grid_node_state": true,
+    "pattern_provider": true,
+    "part_mod_name": true,
+    "power_storage": true,
+    "crafting_monitor": true,
+    "part_name": true
+  },
   "jadeaddons": {
     "equipment_requirement": ""
   },
   "jadeaddons.lootr": {
     "info": true
+  },
+  "mekanism": {
+    "chemical": true,
+    "remove_builtin": true,
+    "fluid": true,
+    "energy": true,
+    "tooltip_renderer": true
   },
   "easy_villagers": {
     "villager": true,
@@ -106,10 +131,27 @@
   "mechanical_cow": {
     "data": true
   },
+  "createthrusters": {
+    "smart_battery_energy": true,
+    "thruster_resources": true
+  },
   "camera": {
     "image_frame": true
   },
   "corpse": {
     "corpse": true
+  },
+  "securitycraft": {
+    "showowner": true,
+    "showmodules": true,
+    "entity_info": true,
+    "block_info": true,
+    "showcustomname": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "main": true,
+    "display.content": true,
+    "display.status": true
   }
 }
