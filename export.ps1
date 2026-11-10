@@ -15,6 +15,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Remove-TypeData System.Array -ErrorAction SilentlyContinue   # evite un bug JSON de PowerShell 5.1
 $repo = $PSScriptRoot
 $manifestPath = Join-Path $Instance 'minecraftinstance.json'
@@ -36,13 +37,13 @@ try {
     Log "Lecture de $manifestPath ..."
     $inst = Get-Content $manifestPath -Raw -Encoding UTF8 | ConvertFrom-Json
 
+    # 1. Mods suivis par CurseForge (avec lien de telechargement direct)
     $mods = @()
-    $missing = @()
     foreach ($addon in $inst.installedAddons) {
         $f = $addon.installedFile
         $file = $f.fileNameOnDisk
         if ($file -like '*.disabled') { continue }   # mod desactive dans CurseForge
-        if (-not $f.downloadUrl) { $missing += $addon.name; continue }
+        if (-not $f.downloadUrl) { continue }        # auteur qui bloque le telechargement hors CurseForge : traite plus bas
         $sha1 = ($f.hashes | Where-Object { $_.type -eq 1 } | Select-Object -First 1).value
         $mods += [ordered]@{
             name = $addon.name
@@ -66,9 +67,58 @@ try {
         if ($Push) { throw "$msg. CurseForge est peut-etre en cours de mise a jour, reessaie plus tard." }
         Log $msg -Warn
     }
-    if ($manual.Count -gt 0 -or $missing.Count -gt 0) {
-        Log "Ces mods ne peuvent pas etre telecharges depuis CurseForge et ne seront PAS installes chez tes amis :" -Warn
-        ($manual + $missing) | ForEach-Object { Log "  $_" -Warn }
+
+    # 2. Mods hors CurseForge (Modrinth, ajoutes a la main...) : on cherche le fichier exact sur Modrinth
+    #    grace a son empreinte SHA1. Introuvable -> le .jar est inclus dans le depot (dossier extra-mods).
+    $extraDir = Join-Path $repo 'extra-mods'
+    $bundled = @()
+    if ($manual.Count -gt 0) {
+        $byHash = @{}
+        foreach ($name in $manual) {
+            $item = Get-Item -LiteralPath (Join-Path $modsDir $name)
+            $byHash[(Get-FileHash -LiteralPath $item.FullName -Algorithm SHA1).Hash.ToLower()] = $item
+        }
+        try {
+            $body = @{ hashes = @($byHash.Keys); algorithm = 'sha1' } | ConvertTo-Json
+            $resp = Invoke-RestMethod -Method Post -Uri 'https://api.modrinth.com/v2/version_files' -Body $body `
+                -ContentType 'application/json' -UserAgent 'MMI-MinecraftModsInstaller'
+        } catch {
+            throw "Modrinth inaccessible, reessaie plus tard. ($_)"
+        }
+        foreach ($h in @($byHash.Keys)) {
+            $item = $byHash[$h]
+            $ver = $resp.PSObject.Properties[$h]
+            $mf = if ($ver) { $ver.Value.files | Where-Object { $_.hashes.sha1 -eq $h } | Select-Object -First 1 }
+            $entry = [ordered]@{ name = $item.BaseName; file = $item.Name }
+            if ($mf) {
+                $entry.url = $mf.url
+                Log "Modrinth : $($item.Name)"
+            } else {
+                if ($item.Length -gt 95MB) {
+                    throw "$($item.Name) n'est ni sur CurseForge ni sur Modrinth et fait plus de 95 Mo : GitHub ne peut pas le stocker."
+                }
+                $entry.path = "extra-mods/$($item.Name)"
+                $bundled += $item
+                Log "Inclus dans le depot (ni CurseForge ni Modrinth) : $($item.Name)" -Warn
+            }
+            $entry.size = [int64]$item.Length
+            $entry.sha1 = $h
+            $mods += $entry
+        }
+    }
+
+    # extra-mods ne contient que les jars actuellement necessaires
+    if ($bundled.Count -gt 0) { New-Item -ItemType Directory -Force $extraDir | Out-Null }
+    if (Test-Path $extraDir) {
+        $keep = @($bundled | ForEach-Object { $_.Name })
+        Get-ChildItem $extraDir -File | Where-Object { $keep -notcontains $_.Name } | Remove-Item -Force
+        foreach ($b in $bundled) {
+            $dst = Join-Path $extraDir $b.Name
+            if (-not (Test-Path -LiteralPath $dst) -or (Get-Item -LiteralPath $dst).Length -ne $b.Length) {
+                Copy-Item -LiteralPath $b.FullName $dst -Force
+            }
+        }
+        if ($bundled.Count -eq 0) { Remove-Item $extraDir -Force -Recurse }
     }
 
     # La date "generated" ne change que si la liste de mods / versions change (evite des commits inutiles)

@@ -1,3 +1,4 @@
 mods/
 *.jar
+!extra-mods/*.jar
 .vscode/

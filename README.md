@@ -33,4 +33,8 @@ seulement si quelque chose a change.
 Pour verifier avant de publier : lance `export.ps1` (synchronise sans publier), regarde avec `git status`, puis `publish.bat`.
 
 Instance par defaut : `MyDATAPACK` (sinon ajoute `-Instance "chemin"`).
-Les fichiers .jar ne sont pas stockes dans le depot : `modpack.json` contient leurs liens CurseForge.
+Les .jar ne sont pas stockes dans le depot : `modpack.json` contient leurs liens de telechargement.
+
+**Mods hors CurseForge** (Modrinth, fichier recu d'un ami...) : mets simplement le .jar dans le dossier `mods`
+de l'instance. A la publication, le script cherche le fichier exact sur Modrinth ; s'il n'y est pas, le .jar
+est copie dans `extra-mods/` et publie avec le pack (95 Mo max par fichier, limite de GitHub).

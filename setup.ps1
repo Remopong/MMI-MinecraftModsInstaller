@@ -93,6 +93,19 @@ try {
             $src = $PSScriptRoot
         }
     }
+
+    # Auto-mise a jour : si GitHub a une version plus recente de ce script, on la prend et on la lance
+    $newScript = Join-Path $src 'setup.ps1'
+    if ($src -ne $PSScriptRoot -and (Test-Path $newScript) -and
+        (Get-FileHash $newScript).Hash -ne (Get-FileHash $PSCommandPath).Hash) {
+        Write-Host "- Nouvelle version de l'installateur, mise a jour..."
+        foreach ($f in 'setup.ps1', 'setup.bat') {
+            try { Copy-Item (Join-Path $src $f) (Join-Path $PSScriptRoot $f) -Force } catch { }
+        }
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $newScript -Local
+        exit $LASTEXITCODE
+    }
+
     $pack = Get-Content (Join-Path $src 'modpack.json') -Raw -Encoding UTF8 | ConvertFrom-Json
     $versionId = "neoforge-$($pack.neoforge)"
     Write-Host "- Minecraft $($pack.minecraft), NeoForge $($pack.neoforge), $($pack.mods.Count) mods (pack du $($pack.generated))"
@@ -140,7 +153,12 @@ try {
         if ((Test-Path -LiteralPath $target) -and (Get-Item -LiteralPath $target).Length -eq $m.size) { continue }
         Write-Host ("- [{0}/{1}] {2}" -f $i, $pack.mods.Count, $m.file)
         $part = "$target.part"
-        Download $m.url $part
+        if ($m.path) {
+            # mod hors CurseForge/Modrinth, fourni directement dans le pack
+            Copy-Item -LiteralPath (Join-Path $src $m.path) $part -Force
+        } else {
+            Download $m.url $part
+        }
         if ($m.sha1 -and (Get-FileHash -LiteralPath $part -Algorithm SHA1).Hash -ne $m.sha1.ToUpper()) {
             Remove-Item -LiteralPath $part -Force
             throw "Fichier corrompu : $($m.file). Relance setup.bat."
