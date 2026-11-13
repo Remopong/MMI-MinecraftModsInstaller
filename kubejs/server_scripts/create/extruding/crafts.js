@@ -15,12 +15,9 @@ ServerEvents.recipes(e => {
     //Marble
     e.custom({ "type": "create_mechanical_extruder:extruding", "blockIngredients": { "first": { "blocks": "kubejs:white" }, "second": { "blocks": "minecraft:lava" } }, "consumeBlocks": { "first": false, "second": false }, "result": { "id": "embellishcraft:marble" } })
     //Gneiss
-    ServerEvents.recipes(event => {
-        event.recipes.create_mechanical_extruder.extruding('embellishcraft:gneiss', [
-            Block.id('create_confectionery:white_chocolate').blockStates,
-            Block.id('minecraft:lava').blockStates
-        ]);
-    });
+    if (Item.exists('create_confectionery:white_chocolate')) {
+        e.custom({ "type": "create_mechanical_extruder:extruding", "blockIngredients": { "first": { "blocks": "create_confectionery:white_chocolate" }, "second": { "blocks": "minecraft:lava" } }, "consumeBlocks": { "first": false, "second": false }, "result": { "id": "embellishcraft:gneiss" } })
+    }
     //Basalt
     e.custom({ "type": "create_mechanical_extruder:extruding", "blockIngredients": { "first": { "blocks": "kubejs:black" }, "second": { "blocks": "minecraft:lava" } }, "consumeBlocks": { "first": false, "second": false }, "result": { "id": "embellishcraft:basalt" } })
 
