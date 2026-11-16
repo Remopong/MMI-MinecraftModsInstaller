@@ -1,7 +1,7 @@
 {
     "minecraft":  "1.21.1",
     "neoforge":  "21.1.262",
-    "generated":  "2026-11-09 23:14",
+    "generated":  "2026-11-16 07:02",
     "mods":  [
                  {
                      "name":  "Security Craft",
@@ -44,6 +44,13 @@
                      "url":  "https://edge.forgecdn.net/files/7727/898/ae2jeiintegration-1.2.1.jar",
                      "size":  91710,
                      "sha1":  "e99898b3e9c32bf6ac757e7ad50247746622cdfc"
+                 },
+                 {
+                     "name":  "aeroships_journeymap-1.1.0",
+                     "file":  "aeroships_journeymap-1.1.0.jar",
+                     "path":  "extra-mods/aeroships_journeymap-1.1.0.jar",
+                     "size":  30852,
+                     "sha1":  "8e6749942b34cec3cad130c77b989edff827d494"
                  },
                  {
                      "name":  "Create: Aeroworks",

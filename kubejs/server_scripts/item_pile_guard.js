@@ -7,6 +7,10 @@ const ITEM_PILE_LIMIT = 1000
 const ITEM_PILE_CHECK_TICKS = 1200
 let itemPileGuardFirstRun = true
 
+function itemPileGuardDim(level) {
+    try { return String(level.dimension) } catch (e) { return '?' }
+}
+
 ServerEvents.tick(event => {
     const server = event.server
     if (server.getTickCount() % ITEM_PILE_CHECK_TICKS !== 0) return
@@ -26,7 +30,7 @@ ServerEvents.tick(event => {
                 if (list.length <= ITEM_PILE_LIMIT) return
                 list.forEach(ent => ent.discard())
                 console.warn('[ItemPileGuard] ' + list.length + ' objets au sol supprimés en ' + key +
-                    ' (' + level.dimension().location() + ') - vérifier la machine à cet endroit')
+                    ' (' + itemPileGuardDim(level) + ') - vérifier la machine à cet endroit')
             })
         })
         if (itemPileGuardFirstRun) {

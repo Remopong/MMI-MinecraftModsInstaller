@@ -45,13 +45,12 @@ ServerEvents.recipes(e => {
 
     // Raw Steel
     if (Item.exists('mapperbase:pig_iron_chunk') && Item.exists('mapperbase:raw_steel')) {
-        const t = 'mapperbase:pig_iron_chunk'
-        seq('kubejs:sequenced_assembly/raw_steel', item(t), 'mapperbase:raw_steel', t, 1, [
-            step('create:pressing', t),
-            step('create:deploying', t, [item(t)]),
-            step('create:pressing', t),
-            step('create:deploying', t, [item(t)]),
-            step('create:pressing', t)
+        seq('kubejs:sequenced_assembly/raw_steel', item('mapperbase:pig_iron_chunk'), 'mapperbase:raw_steel', 'mapperbase:pig_iron_chunk', 1, [
+            step('create:pressing', 'mapperbase:pig_iron_chunk'),
+            step('create:deploying', 'mapperbase:pig_iron_chunk', [item('mapperbase:pig_iron_chunk')]),
+            step('create:pressing', 'mapperbase:pig_iron_chunk'),
+            step('create:deploying', 'mapperbase:pig_iron_chunk', [item('mapperbase:pig_iron_chunk')]),
+            step('create:pressing', 'mapperbase:pig_iron_chunk')
         ])
     }
 })
