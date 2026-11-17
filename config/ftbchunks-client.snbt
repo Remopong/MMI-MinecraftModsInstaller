@@ -138,48 +138,48 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:zombie": true
-			"crittersandcompanions:red_panda": true
-			"minecraft:zombie_villager": true
-			"minecraft:frog": true
-			"crittersandcompanions:ferret": true
-			"minecraft:wolf": true
 			"minecraft:armadillo": true
-			"minecraft:sheep": true
-			"minecraft:glow_squid": true
-			"minecraft:bat": true
-			"minecraft:trader_llama": true
-			"minecraft:skeleton_horse": true
-			"minecraft:spider": true
-			"minecraft:llama": true
 			"crittersandcompanions:otter": true
-			"minecraft:skeleton": true
-			"minecraft:axolotl": true
-			"minecraft:tropical_fish": false
-			"minecraft:bee": true
-			"minecraft:iron_golem": true
-			"minecraft:cat": true
 			"crittersandcompanions:stick_bug": true
-			"minecraft:villager": true
-			"minecraft:panda": true
-			"crittersandcompanions:jumping_spider": true
-			"crittersandcompanions:koi_fish": true
-			"minecraft:parrot": true
-			"crittersandcompanions:dragonfly": true
-			"minecraft:horse": true
+			"minecraft:skeleton": true
 			"minecraft:enderman": true
-			"minecraft:salmon": false
-			"minecraft:wandering_trader": true
+			"minecraft:llama": true
+			"minecraft:squid": true
 			"minecraft:chicken": true
 			"minecraft:pig": true
-			"minecraft:camel": true
-			"minecraft:squid": true
-			"minecraft:creeper": true
-			"crittersandcompanions:roly_poly": true
+			"minecraft:bee": true
+			"minecraft:panda": true
 			"minecraft:cow": true
-			"minecraft:cod": false
-			"minecraft:rabbit": true
+			"minecraft:bat": true
 			"crittersandcompanions:ladybug": true
+			"crittersandcompanions:jumping_spider": true
+			"minecraft:glow_squid": true
+			"minecraft:camel": true
+			"minecraft:creeper": true
+			"minecraft:cod": false
+			"minecraft:sheep": true
+			"minecraft:villager": true
+			"minecraft:rabbit": true
+			"minecraft:skeleton_horse": true
+			"minecraft:parrot": true
+			"minecraft:iron_golem": true
+			"minecraft:zombie": true
+			"crittersandcompanions:ferret": true
+			"minecraft:axolotl": true
+			"minecraft:zombie_villager": true
+			"minecraft:salmon": false
+			"crittersandcompanions:koi_fish": true
+			"minecraft:wandering_trader": true
+			"crittersandcompanions:dragonfly": true
+			"minecraft:cat": true
+			"crittersandcompanions:roly_poly": true
+			"minecraft:frog": true
+			"crittersandcompanions:red_panda": true
+			"minecraft:horse": true
+			"minecraft:spider": true
+			"minecraft:trader_llama": true
+			"minecraft:wolf": true
+			"minecraft:tropical_fish": false
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
@@ -298,7 +298,7 @@
 		
 		# Enables creation of death waypoints
 		# Default: true
-		death_waypoints: true
+		death_waypoints: false
 		
 		# Show waypoints in world
 		# Default: true

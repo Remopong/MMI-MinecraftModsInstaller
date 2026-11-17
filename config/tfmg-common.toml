@@ -140,15 +140,6 @@
 		surfaceScannerMinimumRPM = 64
 
 	#.
-	#Polarizer
-	[machines.polarizer]
-		#.
-		#How much FE can polarizer charge per tick.
-		# Default: 1000
-		# Range: > 1
-		polarizerItemChargingRate = 1000
-
-	#.
 	#Coke Oven
 	[machines.coke_oven]
 		#.

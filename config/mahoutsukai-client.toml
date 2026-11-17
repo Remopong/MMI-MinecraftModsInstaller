@@ -85,3 +85,5 @@
 	SMOKE_RING_PARTICLE_QUALITY = 24
 	#Cache images between restarts used in the mahoujin projector
 	CACHE_IMAGES = false
+	#Whether Mystic Staff explosions play their sound
+	MYSTIC_STAFF_EXPLOSION_SOUND = true

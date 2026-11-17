@@ -5,6 +5,45 @@
       "name": "Remopong",
       "uniqueId": "1489e6fb-44e8-469d-bae0-04d783d67b09"
     },
+    "time": 1794810947204,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/XUZcZQLUCJ"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Remopong",
+      "uniqueId": "1489e6fb-44e8-469d-bae0-04d783d67b09"
+    },
+    "time": 1794810773686,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/WbV9mrC0Lq"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Remopong",
+      "uniqueId": "1489e6fb-44e8-469d-bae0-04d783d67b09"
+    },
+    "time": 1794810553874,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/SdgsSjalHD"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Remopong",
+      "uniqueId": "1489e6fb-44e8-469d-bae0-04d783d67b09"
+    },
     "time": 1792584762530,
     "type": "Heap dump summary",
     "data": {
