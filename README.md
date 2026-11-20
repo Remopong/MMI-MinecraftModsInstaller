@@ -19,6 +19,7 @@ Ce que le script fait pour toi :
 - installe la bonne version de NeoForge (Java est trouve ou telecharge automatiquement, aucun redemarrage) ;
 - telecharge les mods directement depuis CurseForge et verifie qu'ils ne sont pas corrompus ;
 - installe le modpack dans un dossier separe (`%appdata%\.minecraft\modpacks\MMI`) : ton Minecraft normal n'est pas touche ;
+- recopie dans le profil MMI les serveurs enregistres dans ton Minecraft normal (ajout seulement, rien n'est supprime) ;
 - cree le profil **MMI - Serveur** avec la RAM reglee selon ton PC (10 Go si 32 Go+, 6 Go si 16 Go, 4 Go si 8 Go, 2 Go sinon).
 
 Tu peux ajouter tes propres mods client (minimap, shaders...) dans `%appdata%\.minecraft\modpacks\MMI\mods` :

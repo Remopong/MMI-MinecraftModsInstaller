@@ -34,6 +34,79 @@ function Download($url, $out) {
     }
 }
 
+# --- servers.dat (NBT non compresse) : lecture des serveurs et fusion sans rien supprimer ---
+function Read-ServerList([string]$path) {
+    $b = [IO.File]::ReadAllBytes($path)
+    $script:nbtPos = 0
+    function U8  { $v = $b[$script:nbtPos]; $script:nbtPos += 1; return [int]$v }
+    function U16 { $v = ([int]$b[$script:nbtPos] -shl 8) -bor [int]$b[$script:nbtPos + 1]; $script:nbtPos += 2; return $v }
+    function I32 { $v = ([int64]$b[$script:nbtPos] -shl 24) -bor ([int64]$b[$script:nbtPos + 1] -shl 16) -bor ([int64]$b[$script:nbtPos + 2] -shl 8) -bor [int64]$b[$script:nbtPos + 3]; $script:nbtPos += 4; return [int64]$v }
+    function Str { $n = U16; $s = [Text.Encoding]::UTF8.GetString($b, $script:nbtPos, $n); $script:nbtPos += $n; return $s }
+    function Skip([int]$t) {
+        switch ($t) {
+            1 { $script:nbtPos += 1 } 2 { $script:nbtPos += 2 } 3 { $script:nbtPos += 4 } 4 { $script:nbtPos += 8 }
+            5 { $script:nbtPos += 4 } 6 { $script:nbtPos += 8 }
+            7 { $n = I32; $script:nbtPos += $n }
+            8 { $n = U16; $script:nbtPos += $n }
+            9 { $et = U8; $n = I32; for ($k = 0; $k -lt $n; $k++) { Skip $et } }
+            10 { while ($true) { $t2 = U8; if ($t2 -eq 0) { break }; $nl = U16; $script:nbtPos += $nl; Skip $t2 } }
+            11 { $n = I32; $script:nbtPos += 4 * $n }
+            12 { $n = I32; $script:nbtPos += 8 * $n }
+            default { throw "tag NBT inconnu ($t)" }
+        }
+    }
+    if ((U8) -ne 10) { throw "servers.dat invalide" }
+    $null = Str
+    $list = @()
+    while ($script:nbtPos -lt $b.Length) {
+        $t = U8; if ($t -eq 0) { break }
+        $name = Str
+        if ($t -eq 9 -and $name -eq 'servers') {
+            $et = U8; $n = I32
+            if ($n -gt 0 -and $et -ne 10) { throw "liste servers inattendue" }
+            for ($k = 0; $k -lt $n; $k++) {
+                $start = $script:nbtPos; $ip = ''
+                while ($true) {
+                    $t2 = U8; if ($t2 -eq 0) { break }
+                    $nm = Str
+                    if ($t2 -eq 8 -and $nm -eq 'ip') { $ip = Str } else { Skip $t2 }
+                }
+                $raw = New-Object byte[] ($script:nbtPos - $start)
+                [Array]::Copy($b, $start, $raw, 0, $raw.Length)
+                $list += ,([pscustomobject]@{ ip = $ip.Trim().ToLower(); raw = $raw })
+            }
+        } else { Skip $t }
+    }
+    return ,$list
+}
+
+function Write-ServerList([string]$path, $list) {
+    $ms = New-Object IO.MemoryStream
+    $ms.Write([byte[]](10, 0, 0, 9, 0, 7), 0, 6)
+    $name = [Text.Encoding]::ASCII.GetBytes('servers'); $ms.Write($name, 0, $name.Length)
+    $n = $list.Count
+    $ms.Write([byte[]](10, (($n -shr 24) -band 255), (($n -shr 16) -band 255), (($n -shr 8) -band 255), ($n -band 255)), 0, 5)
+    foreach ($e in $list) { $ms.Write($e.raw, 0, $e.raw.Length) }
+    $ms.WriteByte(0)
+    [IO.File]::WriteAllBytes($path, $ms.ToArray())
+}
+
+function Import-Servers([string]$from, [string]$to) {
+    if (-not (Test-Path -LiteralPath $from)) { return 0 }
+    if (-not (Test-Path -LiteralPath $to)) {
+        Copy-Item -LiteralPath $from $to
+        return (Read-ServerList $to).Count
+    }
+    $src = Read-ServerList $from
+    $dst = Read-ServerList $to
+    $known = @($dst | ForEach-Object { $_.ip })
+    $new = @($src | Where-Object { $_.ip -and ($known -notcontains $_.ip) })
+    if ($new.Count -eq 0) { return 0 }
+    Copy-Item -LiteralPath $to "$to.mmi-backup" -Force
+    Write-ServerList $to (@($dst) + $new)
+    return $new.Count
+}
+
 function Find-Java {
     $candidates = @(
         "$mcDir\runtime\java-runtime-delta\windows-x64\java-runtime-delta\bin\java.exe",
@@ -195,6 +268,15 @@ try {
     # Reprend les options du jeu (touches, son, video) depuis le .minecraft normal a la 1re installation
     if (-not (Test-Path "$gameDir\options.txt") -and (Test-Path "$mcDir\options.txt")) {
         Copy-Item "$mcDir\options.txt" "$gameDir\options.txt"
+    }
+
+    # Serveurs enregistres : on ajoute au profil MMI ceux du .minecraft normal qui manquent.
+    # Rien n'est jamais supprime ; en cas de probleme on n'y touche pas et l'installation continue.
+    try {
+        $added = Import-Servers "$mcDir\servers.dat" "$gameDir\servers.dat"
+        if ($added -gt 0) { Write-Host "- $added serveur(s) enregistre(s) importe(s) depuis ton Minecraft normal." }
+    } catch {
+        Write-Warning "Import des serveurs enregistres ignore ($_)"
     }
 
     # 6. Profil launcher -----------------------------------------------------
