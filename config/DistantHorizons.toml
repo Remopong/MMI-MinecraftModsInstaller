@@ -27,7 +27,7 @@ _version = 5
 				# Note: this is a best effort number. 
 				# The actual render distance may be above or below this number 
 				# depending on your other graphic settings.
-				lodChunkRenderDistanceRadius = 100
+				lodChunkRenderDistanceRadius = 200
 				#
 				# This indicates how far apart drops in LOD quality are. 
 				# 
@@ -171,7 +171,7 @@ _version = 5
 			[client.advanced.graphics.fog]
 				#
 				# Determines if fog is drawn on DH LODs.
-				enableDhFog = true
+				enableDhFog = false
 				#
 				# What color should fog use? 
 				# 
@@ -491,7 +491,7 @@ _version = 5
 			# IP_ONLY: Example: "192.168.1.40" 
 			# NAME_IP: Example: "Minecraft Server IP 192.168.1.40" 
 			# NAME_IP_PORT: Example: "Minecraft Server IP 192.168.1.40:25565"NAME_IP_PORT_MC_VERSION: Example: "Minecraft Server IP 192.168.1.40:25565 GameVersion 1.16.5"
-			serverFolderNameMode = "NAME_ONLY"
+			serverFolderNameMode = "IP_ONLY"
 
 		[client.advanced.autoUpdater]
 			#
@@ -732,7 +732,7 @@ _version = 5
 		# CHAT 
 		# LOG 
 		# DISABLED
-		showGenerationProgress = "OVERLAY"
+		showGenerationProgress = "DISABLED"
 		#
 		# How often should the distant generator progress be displayed?
 		generationProgressDisplayIntervalInSeconds = 2

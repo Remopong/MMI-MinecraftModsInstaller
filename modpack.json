@@ -1,7 +1,7 @@
 {
     "minecraft":  "1.21.1",
     "neoforge":  "21.1.262",
-    "generated":  "2026-11-20 22:09",
+    "generated":  "2026-11-24 16:13",
     "mods":  [
                  {
                      "name":  "Security Craft",
@@ -270,13 +270,6 @@
                      "sha1":  "6f5395f58139802edfde7cb9170279f92f291971"
                  },
                  {
-                     "name":  "Chunky (Forge/NeoForge)",
-                     "file":  "Chunky-NeoForge-1.4.23.jar",
-                     "url":  "https://edge.forgecdn.net/files/6383/261/Chunky-NeoForge-1.4.23.jar",
-                     "size":  340572,
-                     "sha1":  "ab0c74743a653020fe2dfc4986b43e893947f3e9"
-                 },
-                 {
                      "name":  "Cloth Config API (Fabric/Forge/NeoForge)",
                      "file":  "cloth-config-15.0.140-neoforge.jar",
                      "url":  "https://edge.forgecdn.net/files/5729/127/cloth-config-15.0.140-neoforge.jar",
@@ -317,6 +310,13 @@
                      "url":  "https://edge.forgecdn.net/files/7276/577/configured-neoforge-1.21.1-2.6.3.jar",
                      "size":  428793,
                      "sha1":  "e977d86eec39d49295df4e2c4265d6710ae065e8"
+                 },
+                 {
+                     "name":  "Construction Sticks",
+                     "file":  "ConstructionSticks-1.21.1-1.5.0.jar",
+                     "url":  "https://edge.forgecdn.net/files/8763/707/ConstructionSticks-1.21.1-1.5.0.jar",
+                     "size":  264738,
+                     "sha1":  "acd28b0d7147f55ec8590cef3d58add764543498"
                  },
                  {
                      "name":  "Controlling",
@@ -1535,6 +1535,13 @@
                      "url":  "https://edge.forgecdn.net/files/5732/771/StrawStatues-v21.1.0-1.21.1-NeoForge.jar",
                      "size":  313043,
                      "sha1":  "133f187ee682ee71c3db7307b93c572b7951af4b"
+                 },
+                 {
+                     "name":  "Studious Keybinds",
+                     "file":  "studious-keybinds-neoforge-1.21.1-1.0.8-beta.1.jar",
+                     "url":  "https://edge.forgecdn.net/files/9106/885/studious-keybinds-neoforge-1.21.1-1.0.8-beta.1.jar",
+                     "size":  50696,
+                     "sha1":  "774dae2a81ba825edd5decde37f466b052aeeb5e"
                  },
                  {
                      "name":  "SuperMartijn642\u0027s Config Lib",
