@@ -141,7 +141,9 @@ try {
 
     # 1. Launcher ----------------------------------------------------------
     Step "1. Verification du launcher Minecraft"
-    if (-not (Test-Path $profiles)) {
+    # Le launcher du Microsoft Store / app Xbox lit son propre fichier de profils
+    $profileFiles = @($profiles, (Join-Path $mcDir 'launcher_profiles_microsoft_store.json')) | Where-Object { Test-Path $_ }
+    if (-not $profileFiles) {
         throw "Launcher Minecraft introuvable ($profiles). Installe le launcher officiel et lance-le une fois."
     }
     if (Get-Process -Name 'MinecraftLauncher', 'Minecraft' -ErrorAction SilentlyContinue) {
@@ -288,9 +290,10 @@ try {
            "-XX:G1ReservePercent=20 -XX:MaxTenuringThreshold=1"
     if ($alloc -ge 4) { $jvm += " -XX:G1HeapRegionSize=8M" }
 
+    $now = (Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
+    foreach ($profiles in $profileFiles) {
     Copy-Item $profiles "$profiles.mmi-backup" -Force
     $lp = Get-Content $profiles -Raw -Encoding UTF8 | ConvertFrom-Json
-    $now = (Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
     $existing = $lp.profiles.PSObject.Properties['mmi']
     if ($existing) {
         # Profil deja la : on met juste a jour la version (on garde la RAM si le joueur l'a changee)
@@ -312,6 +315,7 @@ try {
         Write-Host "- Profil 'MMI - Serveur' cree avec ${alloc} Go de RAM (PC : ${ramGB} Go)."
     }
     [IO.File]::WriteAllText($profiles, ($lp | ConvertTo-Json -Depth 32), (New-Object Text.UTF8Encoding $false))
+    }
 
     Write-Host ""
     Write-Host "===================================================" -ForegroundColor Green
