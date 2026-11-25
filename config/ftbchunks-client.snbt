@@ -138,50 +138,51 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:armadillo": true
-			"minecraft:axolotl": true
-			"minecraft:wandering_trader": true
-			"minecraft:enderman": true
-			"crittersandcompanions:dragonfly": true
-			"crittersandcompanions:ferret": true
-			"minecraft:zombie": true
-			"minecraft:pig": true
-			"minecraft:sheep": true
-			"minecraft:blaze": true
-			"minecraft:frog": true
-			"minecraft:cod": false
-			"minecraft:chicken": true
-			"minecraft:wolf": true
-			"minecraft:bat": true
-			"crittersandcompanions:jumping_spider": true
-			"crittersandcompanions:red_panda": true
-			"minecraft:turtle": true
-			"minecraft:glow_squid": true
-			"minecraft:parrot": true
+			"minecraft:slime": true
 			"minecraft:salmon": false
-			"minecraft:cat": true
-			"minecraft:iron_golem": true
-			"minecraft:llama": true
-			"minecraft:horse": true
-			"minecraft:trader_llama": true
-			"crittersandcompanions:ladybug": true
-			"minecraft:squid": true
-			"minecraft:creeper": true
-			"minecraft:skeleton": true
-			"minecraft:panda": true
-			"crittersandcompanions:roly_poly": true
-			"minecraft:zombie_villager": true
-			"minecraft:rabbit": true
-			"minecraft:cow": true
-			"crittersandcompanions:otter": true
 			"crittersandcompanions:koi_fish": true
-			"minecraft:skeleton_horse": true
-			"minecraft:spider": true
-			"minecraft:villager": true
+			"minecraft:creeper": true
+			"minecraft:cod": false
+			"crittersandcompanions:otter": true
+			"minecraft:skeleton": true
+			"crittersandcompanions:red_panda": true
+			"minecraft:bat": true
+			"minecraft:squid": true
+			"minecraft:zombie": true
+			"minecraft:cat": true
+			"minecraft:pig": true
+			"minecraft:frog": true
+			"minecraft:trader_llama": true
+			"minecraft:blaze": true
+			"crittersandcompanions:ladybug": true
+			"minecraft:enderman": true
 			"minecraft:bee": true
+			"minecraft:wolf": true
+			"minecraft:turtle": true
+			"minecraft:spider": true
+			"minecraft:zombie_villager": true
+			"minecraft:chicken": true
+			"minecraft:skeleton_horse": true
+			"minecraft:glow_squid": true
+			"minecraft:villager": true
+			"minecraft:horse": true
+			"minecraft:iron_golem": true
+			"crittersandcompanions:jumping_spider": true
+			"minecraft:parrot": true
+			"minecraft:camel": true
+			"minecraft:cow": true
+			"minecraft:sheep": true
 			"crittersandcompanions:stick_bug": true
 			"minecraft:tropical_fish": false
-			"minecraft:camel": true
+			"minecraft:axolotl": true
+			"minecraft:wandering_trader": true
+			"crittersandcompanions:dragonfly": true
+			"crittersandcompanions:roly_poly": true
+			"minecraft:armadillo": true
+			"minecraft:rabbit": true
+			"minecraft:panda": true
+			"crittersandcompanions:ferret": true
+			"minecraft:llama": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

@@ -685,7 +685,7 @@ _version = 5
 		# 
 		# DISABLED 
 		# No distant terrain will be generated.
-		generatorPlan = "SURFACE_ONLY"
+		generatorPlan = "SURFACE_THEN_CHUNKS"
 		#
 		# How detailed should LODs be generated outside the vanilla render distance? 
 		# 
@@ -732,7 +732,7 @@ _version = 5
 		# CHAT 
 		# LOG 
 		# DISABLED
-		showGenerationProgress = "DISABLED"
+		showGenerationProgress = "OVERLAY"
 		#
 		# How often should the distant generator progress be displayed?
 		generationProgressDisplayIntervalInSeconds = 2
@@ -773,7 +773,7 @@ _version = 5
 		# Disabling this option can also fix a rare bug where
 		# modified chunks are skipped due to being too similar to
 		# their saved hash.
-		disableUnchangedChunkCheck = false
+		disableUnchangedChunkCheck = true
 		dataCompression = "Z_STD_BLOCK"
 		#
 		# How should block data be compressed when creating LOD data? 
