@@ -685,7 +685,7 @@ _version = 5
 		# 
 		# DISABLED 
 		# No distant terrain will be generated.
-		generatorPlan = "SURFACE_THEN_CHUNKS"
+		generatorPlan = "SURFACE_ONLY"
 		#
 		# How detailed should LODs be generated outside the vanilla render distance? 
 		# 
@@ -732,7 +732,7 @@ _version = 5
 		# CHAT 
 		# LOG 
 		# DISABLED
-		showGenerationProgress = "OVERLAY"
+		showGenerationProgress = "DISABLED"
 		#
 		# How often should the distant generator progress be displayed?
 		generationProgressDisplayIntervalInSeconds = 2
